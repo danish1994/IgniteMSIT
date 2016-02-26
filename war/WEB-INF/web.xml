@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>Add Speaker</servlet-name>
+		<servlet-class>controller.SpeakerController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Add Speaker</servlet-name>
+		<url-pattern>/addSpeaker</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Add Question</servlet-name>
+		<servlet-class>controller.QuestionController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Add Question</servlet-name>
+		<url-pattern>/addQuestion</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Load Question</servlet-name>
+		<servlet-class>controller.LoadQuestionController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Load Question</servlet-name>
+		<url-pattern>/loadQuestion</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Register</servlet-name>
+		<jsp-file>/Register.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Register</servlet-name>
+		<url-pattern>/register</url-pattern>
+	</servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>Index.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
