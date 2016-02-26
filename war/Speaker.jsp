@@ -145,7 +145,7 @@
 				<textarea name="question" placeholder="Enter Your Question"
 					style="width: 100%; height: 20vh; color: #000000" id="question"></textarea>
 				<br></br>
-				<button onClick="saveQuestion()" class="btn btn-white">Submit</button>
+				<button onClick="saveQuestion()" class="btn btn-default">Submit</button>
 				<br></br>
 				<div id="questioncontainer" style="text-align: left"></div>
 				<br></br>

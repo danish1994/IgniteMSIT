@@ -41,23 +41,13 @@
     ================================================== -->
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="css/animate.min.css">
-<link href='fonts.googleapis.com/css.css' rel='stylesheet'
-	type='text/css'>
-<link href='fonts.googleapis.com/css_2.css' rel='stylesheet'
-	type='text/css'>
+
 <script type="text/javascript" src="js/modernizr.custom.js"></script>
 
 <script src="ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <link href="www.jqueryscript.net/css/jquerysctipttop.css"
 	rel="stylesheet" type="text/css">
 
-
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
 </head>
 <body>
 	<div id="preloader">
@@ -187,22 +177,22 @@
 					Iterator <Speaker> it = ls.iterator();
 					while(it.hasNext()){
 						Speaker s = it.next();
+						if(!(s.getName().equals("guess"))){
 					%>
-					<div class="col-sm-6 col-md-3 col-lg-3 web">
+					<div class="col-md-3 col-sm-6">
 						<div class="portfolio-item wow fadeInUp" data-wow-delay="200ms">
 							<div class="hover-bg">
 								<div class="hover-text">
 									<a href="/Speaker.jsp?speaker=<%= s.getName() %>"
 										class="portfolio-link">
 										<h4><%= s.getName() %></h4> <%= s.getShortDesc() %>
-										<div class="clearfix"></div>
-										<br></br>
-										<ul class="list-inline" >
+										<div class="clearfix"></div> <br></br>
+										<ul class="list-inline">
 											<%
 											if(!(s.getTwitter().equals(null)||s.getTwitter().equals("")))
 											{
 										%>
-											<li ><a href="<%= s.getTwitter() %>"><i
+											<li><a href="<%= s.getTwitter() %>"><i
 													class="fa fa-twitter"></i></a></li>
 											<%
 											}
@@ -230,22 +220,29 @@
 										%> <i class="fa "></i>
 									</a>
 								</div>
-								<img src="<%= s.getPic() %>" style="width: 100%; height: 100%"
-									class="img-responsive" alt="Project Title">
+								<img src="<%= s.getPic() %>" class="img-responsive"
+									style="width: 100%">
 							</div>
 						</div>
 					</div>
 					<%
+						}
 					}
+					Speaker guess = null;
+					try{
+						guess = ofy().load().type(Speaker.class).id("guess").now();
+					}catch(Exception e){
+						e.printStackTrace();
+					}
+					if(!(guess.getName().equals(null))){
 					%>
-					<div class="col-sm-6 col-md-3 col-lg-3 web">
+					<div class="col-md-3 col-sm-6">
 						<div class="portfolio-item wow fadeInUp" data-wow-delay="200ms">
 							<div class="hover-bg">
 								<div class="hover-text">
 									<a class="typeform-share link"
 										href="https://danish8802204230.typeform.com/to/d79trR"
-										data-mode="1" target="_blank"><h4>Guess The Next
-											Speaker</h4></a>
+										data-mode="2" target="_blank"><h3><%= guess.getShortDesc() %></h3></a>
 									<script>
 										(function() {
 											var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = 'typef_orm', b = 'https://s3-eu-west-1.amazonaws.com/share.typeform.com/';
@@ -262,11 +259,14 @@
 									<div class="clearfix"></div>
 									<i class="fa "></i>
 								</div>
-								<img src="img/question.jpg" class="img-responsive"
-									alt="Project Title" style="width: 100%; height: 100%">
+								<img src="<%= guess.getPic() %>" class="img-responsive"
+									style="width: 100%">
 							</div>
 						</div>
 					</div>
+					<%
+					}
+					%>
 				</div>
 			</div>
 			<div class="row">
@@ -274,6 +274,7 @@
 					<h4>More Coming Soon.</h4>
 				</div>
 			</div>
+
 		</div>
 	</div>
 	<!-- Format Section -->
@@ -446,8 +447,6 @@
 		</div>
 	</div>
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<script
-		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/jquery.1.11.1.js"></script>
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script type="text/javascript" src="js/bootstrap.js"></script>
