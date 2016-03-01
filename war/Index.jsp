@@ -9,24 +9,14 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="keywords"
-	content="Ignite MSIT Maharaja Surajmal Institute of Technology New Delhi NCR first talk event IgniteMSIT 30 March 2016 Diwakar Vaish speaker Abhas mitra vishwas mudagal Pulkit Kumar organizer ignitemsit.com best event of msit">
+	content="Ignite MSIT Maharaja Surajmal Institute of Technology New Delhi NCR first talk event IgniteMSIT 30 March 2016 Diwakar Vaish speaker Abhas mitra vishwas mudagal ignitemsit.com best event of msit">
 <meta name="description"
 	content="IgniteMSIT would be the first, to ever host an Ignite Talk in Delhi-NCR. We target a selected audience of 350 budding revolutionists to be a part of this inspiring event. The speakers are from varied domains, sharing their views, ideas and experiences to the fullest, in the minimum amount of time. The event will be held at Auditorium,MSIT,Delhi,India on 30.03.2016">
-<title>Ignite MSIT: Delhi-NCR's first Ignite Event!</title>
-<meta name="description" content="">
-<meta name="author" content="">
-
-<!-- Favicons
-    ================================================== -->
-<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
-<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="72x72"
-	href="/img/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="114x114"
-	href="/img/apple-touch-icon-114x114.png">
-
+<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+<title>Ignite MSIT</title>
 <!-- Bootstrap -->
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 <link rel="stylesheet" type="text/css"
@@ -44,9 +34,26 @@
 
 <script type="text/javascript" src="js/modernizr.custom.js"></script>
 
-<script src="ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<link href="www.jqueryscript.net/css/jquerysctipttop.css"
+<script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css"
 	rel="stylesheet" type="text/css">
+<script>
+	(function(i, s, o, g, r, a, m) {
+		i['GoogleAnalyticsObject'] = r;
+		i[r] = i[r] || function() {
+			(i[r].q = i[r].q || []).push(arguments)
+		}, i[r].l = 1 * new Date();
+		a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+		a.async = 1;
+		a.src = g;
+		m.parentNode.insertBefore(a, m)
+	})(window, document, 'script', '//www.google-analytics.com/analytics.js',
+			'ga');
+
+	ga('create', 'UA-74431622-1', 'auto');
+	ga('send', 'pageview');
+</script>
 
 </head>
 <body>
@@ -88,9 +95,10 @@
 	</nav>
 
 	<!-- Header -->
-	<header class="text-center" name="home">
-		<div class="intro-text">
-			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+	<header class="text-center" name="home" style="height: 90vh">
+		<div class="intro-text" style="height: 100%">
+			<div id="myCarousel" class="carousel slide" data-ride="carousel"
+				style="height: 100%">
 				<!-- Indicators -->
 
 				<ol class="carousel-indicators">
@@ -98,18 +106,18 @@
 					<li data-target="#myCarousel" data-slide-to="1"></li>
 					<li data-target="#myCarousel" data-slide-to="2"></li>
 				</ol>
-				<div class="carousel-inner">
-					<div class="item active">
-						<img src="img/slider/bg1.jpg" style="width: 100%;"
+				<div class="carousel-inner" style="height: 100%">
+					<div class="item active" style="height: 100%">
+						<img src="img/slider/bg1.jpg" style="width: 100%; height: 100%"
 							alt="First slide">
 					</div>
-					<div class="item">
-						<img src="img/slider/bg2.jpg" style="width: 100%" data-src=""
-							alt="Second    slide">
+					<div class="item" style="height: 100%">
+						<img src="img/slider/bg2.jpg" style="width: 100%; height: 100%"
+							data-src="" alt="Second    slide">
 					</div>
-					<div class="item">
-						<img src="img/slider/bg3.jpg" style="width: 100%" data-src=""
-							alt="Third slide">
+					<div class="item" style="height: 100%">
+						<img src="img/slider/bg3.jpg" style="width: 100%; height: 100%"
+							data-src="" alt="Third slide">
 					</div>
 				</div>
 				<a class="left carousel-control" href="#myCarousel"
@@ -179,46 +187,48 @@
 						Speaker s = it.next();
 						if(!(s.getName().equals("guess"))){
 					%>
-					<div class="col-md-3 col-sm-6">
+					<div class="col-md-3 col-sm-6 col-lg-3 col-xs-12">
 						<div class="portfolio-item wow fadeInUp" data-wow-delay="200ms">
 							<div class="hover-bg">
 								<div class="hover-text">
 									<a href="/Speaker.jsp?speaker=<%= s.getName() %>"
-										class="portfolio-link">
-										<h4><%= s.getName() %></h4> <%= s.getShortDesc() %>
-										<div class="clearfix"></div> <br></br>
-										<ul class="list-inline">
-											<%
+										class="portfolio-link" style="text-transform: uppercase;">
+										<h4><%= s.getName() %></h4> <%= s.getShortDesc() %></a>
+									<div class="clearfix"></div>
+									<br></br>
+									<ul class="list-inline">
+										<%
 											if(!(s.getTwitter().equals(null)||s.getTwitter().equals("")))
 											{
 										%>
-											<li><a href="<%= s.getTwitter() %>"><i
-													class="fa fa-twitter"></i></a></li>
-											<%
+										<li><a href="<%= s.getTwitter() %>"><i
+												class="fa fa-twitter"></i></a></li>
+										<%
 											}
 											if(!(s.getFacebook().equals(null)||s.getFacebook().equals("")))
 											{
 										%>
-											<li><a href="<%= s.getFacebook() %>"><i
-													class="fa fa-facebook"></i></a></li>
-											<%
+										<li><a href="<%= s.getFacebook() %>"><i
+												class="fa fa-facebook"></i></a></li>
+										<%
 											}
 											if(!(s.getGoogle().equals(null)||s.getGoogle().equals("")))
 											{
 										%>
-											<li><a href="<%= s.getGoogle() %>"><i
-													class="fa fa-google-plus"></i></a></li>
-											<%
+										<li><a href="<%= s.getGoogle() %>"><i
+												class="fa fa-google-plus"></i></a></li>
+										<%
 											}
 											if(!(s.getLinkedin().equals(null)||s.getLinkedin().equals("")))
 											{
 										%>
-											<li><a href="<%= s.getLinkedin() %>"><i
-													class="fa fa-linkedin"></i></a></li>
-										</ul> <%
+										<li><a href="<%= s.getLinkedin() %>"><i
+												class="fa fa-linkedin"></i></a></li>
+									</ul>
+									<%
 											}
-										%> <i class="fa "></i>
-									</a>
+										%>
+									<i class="fa "></i>
 								</div>
 								<img src="<%= s.getPic() %>" class="img-responsive"
 									style="width: 100%">
@@ -236,7 +246,8 @@
 					}
 					if(!(guess.getName().equals(null))){
 					%>
-					<div class="col-md-3 col-sm-6">
+					<!-- 
+					<div class="col-md-3 col-sm-6 col-lg-3 col-xs-12">
 						<div class="portfolio-item wow fadeInUp" data-wow-delay="200ms">
 							<div class="hover-bg">
 								<div class="hover-text">
@@ -264,6 +275,7 @@
 							</div>
 						</div>
 					</div>
+					 -->
 					<%
 					}
 					%>
@@ -289,7 +301,7 @@
 			</div>
 			<div id="row">
 				<div
-					class="col-md-2 col-sm-6 col-md-offset-2  team wow fadeInUp format"
+					class="col-md-2 col-sm-6 col-md-offset-2 col-xs-12 team wow fadeInUp format"
 					data-wow-delay="200ms">
 					<div class="thumbnail">
 						<div class="caption">
@@ -299,7 +311,7 @@
 					</div>
 				</div>
 				<div
-					class="col-md-2 col-sm-6 col-md-offset-1 team wow fadeInUp format"
+					class="col-md-2 col-sm-6 col-md-offset-1 col-xs-12 team wow fadeInUp format"
 					data-wow-delay="400ms">
 					<div class="thumbnail">
 						<div class="caption">
@@ -309,7 +321,7 @@
 					</div>
 				</div>
 				<div
-					class="col-md-2 col-sm-6 col-md-offset-1 team wow fadeInUp format"
+					class="col-md-2 col-sm-6 col-md-offset-1 col-xs-12 team wow fadeInUp format"
 					data-wow-delay="600ms">
 					<div class="thumbnail">
 						<div class="caption">
@@ -356,7 +368,7 @@
 	<div id="testimonials-section" class="text-center">
 		<div class="container">
 			<div class="section-title wow fadeInDown">
-				<h2>Reserve Your Seat Now</h2>
+				<h2>Register Now</h2>
 				<hr>
 			</div>
 			<div class="row">
@@ -368,7 +380,7 @@
 								first-come-first-serve basis over those who haven't registered.</strong>
 						</p>
 						<button class="btn btn-lg btn-primary" data-toggle="modal"
-							data-target="#registerModal">Reserve Your Seat Now</button>
+							data-target="#registerModal">Register Now</button>
 						<div id="registerModal" class="modal fade" role="dialog">
 							<div class="modal-dialog" style="color: #000000">
 								<div class="modal-content">
@@ -452,7 +464,6 @@
 	<script type="text/javascript" src="js/bootstrap.js"></script>
 	<script type="text/javascript" src="js/SmoothScroll.js"></script>
 	<script type="text/javascript" src="js/wow.min.js"></script>
-	<script type="text/javascript" src="/js/jquery.prettyPhoto.js"></script>
 	<script type="text/javascript" src="js/jquery.isotope.js"></script>
 	<script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
 	<script type="text/javascript" src="js/contact_me.js"></script>

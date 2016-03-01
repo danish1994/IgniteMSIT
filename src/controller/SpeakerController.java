@@ -51,7 +51,7 @@ public class SpeakerController extends HttpServlet {
 		} else {
 			out.println("<script type=\"text/javascript\">");
 			out.println("alert('Oops! Something Went Wrong. Please Try Again');");
-			out.println("window.location = '/loginCheck';");
+			out.println("window.location = '/';");
 			out.println("</script>");
 		}
 	}

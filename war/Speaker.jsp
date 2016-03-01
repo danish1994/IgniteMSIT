@@ -8,25 +8,26 @@
 <%@ page import="com.google.appengine.api.datastore.Query.Filter"%>
 <!DOCTYPE html>
 <html lang="en">
+<%
+	try{
+		String speaker = request.getParameter("speaker");
+		Speaker s = ofy().load().type(Speaker.class).id(speaker).now();
+		List<Question> det = ofy().load().type(Question.class).filter("speaker", speaker).list();
+		Iterator<Question> et = det.iterator();
+	%>
 <head>
 <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="keywords"
-	content="Ignite MSIT Maharaja Surajmal Institute of Technology New Delhi NCR first talk event IgniteMSIT 30 March 2016 Diwakar Vaish speaker Abhas mitra vishwas mudagal Pulkit Kumar organizer ignitemsit.com best event of msit">
+	content="Ignite MSIT Maharaja Surajmal Institute of Technology New Delhi NCR first talk event IgniteMSIT 30 March 2016 Diwakar Vaish speaker Abhas mitra vishwas mudagal ignitemsit.com best event of msit">
 <meta name="description"
 	content="IgniteMSIT would be the first, to ever host an Ignite Talk in Delhi-NCR. We target a selected audience of 350 budding revolutionists to be a part of this inspiring event. The speakers are from varied domains, sharing their views, ideas and experiences to the fullest, in the minimum amount of time. The event will be held at Auditorium,MSIT,Delhi,India on 30.03.2016">
-<title>Ignite MSIT: Delhi-NCR's first Ignite Event!</title>
+<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+<title><%= s.getName() %></title>
 <meta name="description" content="">
 <meta name="author" content="">
 
-<!-- Favicons
-    ================================================== -->
-<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="72x72"
-	href="img/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="114x114"
-	href="img/apple-touch-icon-114x114.png">
 
 <!-- Bootstrap -->
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
@@ -49,14 +50,37 @@
 	rel='stylesheet' type='text/css'>
 <script type="text/javascript" src="js/modernizr.custom.js"></script>
 
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+<script>
+	(function(i, s, o, g, r, a, m) {
+		i['GoogleAnalyticsObject'] = r;
+		i[r] = i[r] || function() {
+			(i[r].q = i[r].q || []).push(arguments)
+		}, i[r].l = 1 * new Date();
+		a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+		a.async = 1;
+		a.src = g;
+		m.parentNode.insertBefore(a, m)
+	})(window, document, 'script', '//www.google-analytics.com/analytics.js',
+			'ga');
+
+	ga('create', 'UA-74431622-1', 'auto');
+	ga('send', 'pageview');
+</script>
+
 </head>
 <body>
+	<div id="fb-root"></div>
+	<script>
+		(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id))
+				return;
+			js = d.createElement(s);
+			js.id = id;
+			js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=1453946961575719";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
 	<div id="preloader">
 		<div id="status">
 			<img src="img/preloader.gif" height="64" width="64" alt="">
@@ -100,15 +124,8 @@
 	<!-- Header -->
 	<header> </header>
 
-	<%
-	try{
-		String speaker = request.getParameter("speaker");
-		Speaker s = ofy().load().type(Speaker.class).id(speaker).now();
-		List<Question> det = ofy().load().type(Question.class).filter("speaker", speaker).list();
-		Iterator<Question> et = det.iterator();
-	%>
 	<!-- Speaker Section -->
-	<div id="about-section">
+	<div id="about-section" style="padding-bottom: 5vh">
 		<div class="container">
 			<div class="section-title text-center wow fadeInDown">
 				<h2>
@@ -124,6 +141,10 @@
 				</div>
 				<div class="col-md-7 wow fadeInRight">
 					<h4><%= s.getShortDesc() %></h4>
+					<div class="fb-like"
+						data-href="https://www.facebook.com/ignitemsit/"
+						data-layout="button" data-action="like" data-show-faces="true"
+						data-share="true"></div>
 					<p><%= s.getDesc() %></p>
 				</div>
 			</div>
@@ -131,10 +152,10 @@
 	</div>
 
 	<!-- Contact Section -->
-	<div id="about-section" class="text-center">
+	<div id="about-section" class="text-center" style="padding-top: 0px">
 		<div class="container">
 			<div class="section-title wow fadeInDown">
-				<h2>Ask Questions</h2>
+				<h2>I have a Question</h2>
 				<hr>
 			</div>
 			<div class="col-md-10 col-md-offset-1 wow fadeInUp"
