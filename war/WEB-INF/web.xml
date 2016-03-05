@@ -32,12 +32,39 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
 	</servlet-mapping>
 
 	<servlet>
+		<servlet-name>Team Redirect</servlet-name>
+		<jsp-file>/Team.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Team Redirect</servlet-name>
+		<url-pattern>/team</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
 		<servlet-name>Register</servlet-name>
 		<jsp-file>/Register.jsp</jsp-file>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>Register</servlet-name>
 		<url-pattern>/register</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Speaker</servlet-name>
+		<jsp-file>/Speaker.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Speaker</servlet-name>
+		<url-pattern>/speaker</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Index</servlet-name>
+		<jsp-file>/Index.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Index</servlet-name>
+		<url-pattern>/home</url-pattern>
 	</servlet-mapping>
 
 	<error-page>

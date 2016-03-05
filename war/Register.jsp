@@ -3,13 +3,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="keywords"
 	content="Ignite MSIT Maharaja Surajmal Institute of Technology New Delhi NCR first talk event IgniteMSIT 30 March 2016 Diwakar Vaish speaker Abhas mitra vishwas mudagal ignitemsit.com best event of msit">
-<meta name="description"
-	content="IgniteMSIT would be the first, to ever host an Ignite Talk in Delhi-NCR. We target a selected audience of 350 budding revolutionists to be a part of this inspiring event. The speakers are from varied domains, sharing their views, ideas and experiences to the fullest, in the minimum amount of time. The event will be held at Auditorium,MSIT,Delhi,India on 30.03.2016">
+<meta name="description" content="IgniteMSIT Register">
 <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
 <title>Ignite MSIT: Register</title>
 <meta name="description" content="">
@@ -57,13 +55,12 @@
 <body>
 	<div id="preloader">
 		<div id="status">
-			<img src="img/preloader.gif" height="64" width="64" alt="">
+			<img width="" height="" src="img/preloader.gif" height="64"
+				width="64" alt="">
 		</div>
 	</div>
-	<!-- Navigation
-    ==========================================-->
 	<nav id="menu" class="navbar navbar-default navbar-fixed-top">
-		<div class="container">
+		<div class="container" style="height: 6em">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed"
@@ -72,21 +69,21 @@
 						class="icon-bar"></span> <span class="icon-bar"></span> <span
 						class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="Index.jsp">Ignite MSIT</i><strong></strong></a>
+				<a class="navbar-brand" href="/home"> <img src="img/logo.png"
+					alt="Logo" style="width: 5em; height: 3em"></a>
 			</div>
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse"
 				id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="Index.jsp#home" class="page-scroll">Home</a></li>
-					<li><a href="Index.jsp#speaker-section" class="page-scroll">Speakers</a></li>
-					<li><a href="Index.jsp#team-section" class="page-scroll">Format</a></li>
-					<li><a href="Index.jsp#about-section" class="page-scroll">About</a></li>
-					<li><a href="Index.jsp#testimonials-section"
-						class="page-scroll">Register</a></li>
-					<li><a href="team.html" class="active">Team</a></li>
-					<li><a href="Index.jsp#contact-section" class="page-scroll">Contact</a></li>
+					<li><a href="/home#home" class="page-scroll">Home</a></li>
+					<li><a href="/home#speaker-section" class="page-scroll">Speakers</a></li>
+					<li><a href="/home#team-section" class="page-scroll">Format</a></li>
+					<li><a href="/home#about-section" class="page-scroll">About</a></li>
+					<li><a href="/home#testimonials-section" class="page-scroll">Register</a></li>
+					<li><a href="/team">Team</a></li>
+					<li><a href="/home#contact-section" class="page-scroll">Contact</a></li>
 				</ul>
 			</div>
 			<!-- /.navbar-collapse -->
@@ -106,16 +103,25 @@
 				<div class="clearfix"></div>
 			</div>
 			<div id="row">
-				<iframe
-					src="https://docs.google.com/forms/d/1T6vvgSQv8NrmAdkFQU99rz-Lf6NSjH_i1zur8AkGzxw/viewform?embedded=true"
-					width="100%" height="500" frameborder="0" marginheight="0"
-					marginwidth="0">Loading...</iframe>
+				<h3>
+					If the form is not Loading.<br>Please Login into your Google
+					Account or <a id="registerButton">Click Here</a>
+				</h3>
+				<iframe src="http://goo.gl/forms/0K3pHX7nPc" width="100%"
+					height="500" frameborder="0">Loading...</iframe>
 			</div>
 		</div>
 	</div>
 
 	<div id="footer">
 		<div class="container">
+			<div>
+				<br> <a href="https://www.facebook.com/ignitemsit/"><i
+					class="fa fa-facebook"></i></a> <a
+					href="http://www.twitter.com/ignitemsit"><i
+					class="fa fa-twitter"></i></a>
+			</div>
+
 			<p>
 				Copyright 2016<br> <a href="http://ignitemsit.com">Ignite
 					MSIT &reg;</a>

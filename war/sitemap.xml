@@ -10,12 +10,17 @@
 		<priority>1.00</priority>
 	</url>
 	<url>
-		<loc>http://ignitemsit.com/Index.jsp</loc>
+		<loc>http://ignitemsit.com/home</loc>
 		<changefreq>daily</changefreq>
 		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>http://ignitemsit.com/team.html</loc>
+		<loc>http://ignitemsit.com/team</loc>
+		<changefreq>daily</changefreq>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>http://ignitemsit.com/register</loc>
 		<changefreq>daily</changefreq>
 		<priority>0.80</priority>
 	</url>

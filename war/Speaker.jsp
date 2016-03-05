@@ -16,13 +16,11 @@
 		Iterator<Question> et = det.iterator();
 	%>
 <head>
-<meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="keywords"
 	content="Ignite MSIT Maharaja Surajmal Institute of Technology New Delhi NCR first talk event IgniteMSIT 30 March 2016 Diwakar Vaish speaker Abhas mitra vishwas mudagal ignitemsit.com best event of msit">
-<meta name="description"
-	content="IgniteMSIT would be the first, to ever host an Ignite Talk in Delhi-NCR. We target a selected audience of 350 budding revolutionists to be a part of this inspiring event. The speakers are from varied domains, sharing their views, ideas and experiences to the fullest, in the minimum amount of time. The event will be held at Auditorium,MSIT,Delhi,India on 30.03.2016">
+<meta name="description" content="IgniteMSIT Speaker">
 <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
 <title><%= s.getName() %></title>
 <meta name="description" content="">
@@ -69,27 +67,13 @@
 
 </head>
 <body>
-	<div id="fb-root"></div>
-	<script>
-		(function(d, s, id) {
-			var js, fjs = d.getElementsByTagName(s)[0];
-			if (d.getElementById(id))
-				return;
-			js = d.createElement(s);
-			js.id = id;
-			js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=1453946961575719";
-			fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));
-	</script>
 	<div id="preloader">
 		<div id="status">
 			<img src="img/preloader.gif" height="64" width="64" alt="">
 		</div>
 	</div>
-	<!-- Navigation
-    ==========================================-->
 	<nav id="menu" class="navbar navbar-default navbar-fixed-top">
-		<div class="container">
+		<div class="container" style="height: 6em">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed"
@@ -98,22 +82,21 @@
 						class="icon-bar"></span> <span class="icon-bar"></span> <span
 						class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="Index.jsp"> <img
-					src="img/logo.png" alt="Logo" style="width: 3em; height: 100%;"></a>
+				<a class="navbar-brand" href="/home"> <img width="" height=""
+					src="img/logo.png" alt="Logo" style="width: 5em; height: 3em"></a>
 			</div>
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse"
 				id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="Index.jsp#home" class="page-scroll">Home</a></li>
-					<li><a href="Index.jsp#speaker-section" class="page-scroll">Speakers</a></li>
-					<li><a href="Index.jsp#team-section" class="page-scroll">Format</a></li>
-					<li><a href="Index.jsp#about-section" class="page-scroll">About</a></li>
-					<li><a href="Index.jsp#testimonials-section"
-						class="page-scroll">Register</a></li>
-					<li><a href="team.html">Team</a></li>
-					<li><a href="Index.jsp#contact-section" class="page-scroll">Contact</a></li>
+					<li><a href="/home#home" class="page-scroll">Home</a></li>
+					<li><a href="/home#speaker-section" class="page-scroll">Speakers</a></li>
+					<li><a href="/home#team-section" class="page-scroll">Format</a></li>
+					<li><a href="/home#about-section" class="page-scroll">About</a></li>
+					<li><a href="/home#testimonials-section" class="page-scroll">Register</a></li>
+					<li><a href="/team">Team</a></li>
+					<li><a href="/home#contact-section" class="page-scroll">Contact</a></li>
 				</ul>
 			</div>
 			<!-- /.navbar-collapse -->
@@ -136,15 +119,28 @@
 			</div>
 			<div class="row">
 				<div class="col-md-3 wow fadeInLeft">
-					<img style="width: 100%" src="<%= s.getPic() %>"
-						class="img-responsive">
+					<img width="" height="" style="width: 100%" src="<%= s.getPic() %>"
+						class="img-responsive" alt="<%= s.getPic() %>">
 				</div>
 				<div class="col-md-7 wow fadeInRight">
 					<h4><%= s.getShortDesc() %></h4>
-					<div class="fb-like"
-						data-href="https://www.facebook.com/ignitemsit/"
-						data-layout="button" data-action="like" data-show-faces="true"
-						data-share="true"></div>
+					<div class="don-share" data-style="icons" data-bubbles="none"
+						data-limit="3">
+						<div class="don-share-facebook"></div>
+						<div class="don-share-twitter"></div>
+						<div class="don-share-google"></div>
+					</div>
+					<script type="text/javascript">
+						(function() {
+							var dr = document.createElement('script');
+							dr.type = 'text/javascript';
+							dr.async = true;
+							dr.src = '//share.donreach.com/buttons.js';
+							(document.getElementsByTagName('head')[0] || document
+									.getElementsByTagName('body')[0])
+									.appendChild(dr);
+						})();
+					</script>
 					<p><%= s.getDesc() %></p>
 				</div>
 			</div>
@@ -155,7 +151,7 @@
 	<div id="about-section" class="text-center" style="padding-top: 0px">
 		<div class="container">
 			<div class="section-title wow fadeInDown">
-				<h2>I have a Question</h2>
+				<h2>I Have a Question</h2>
 				<hr>
 			</div>
 			<div class="col-md-10 col-md-offset-1 wow fadeInUp"
@@ -165,22 +161,29 @@
 					id="speaker">
 				<textarea name="question" placeholder="Enter Your Question"
 					style="width: 100%; height: 20vh; color: #000000" id="question"></textarea>
-				<br></br>
+				<br /> <br />
 				<button onClick="saveQuestion()" class="btn btn-default">Submit</button>
-				<br></br>
+				<br /> <br />
 				<div id="questioncontainer" style="text-align: left"></div>
-				<br></br>
+				<br /> <br />
 			</div>
 		</div>
 	</div>
 	<%
 	}catch(Exception e){
-		response.sendRedirect("Index.jsp");
+		response.sendRedirect("/home");
 	}
 	%>
 
 	<div id="footer">
 		<div class="container">
+			<div>
+				<br> <a href="https://www.facebook.com/ignitemsit/"><i
+					class="fa fa-facebook"></i></a> <a
+					href="http://www.twitter.com/ignitemsit"><i
+					class="fa fa-twitter"></i></a>
+			</div>
+
 			<p>
 				Copyright 2016<br> <a href="http://ignitemsit.com">Ignite
 					MSIT &reg;</a>

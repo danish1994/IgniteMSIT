@@ -18,6 +18,8 @@ import com.google.appengine.api.blobstore.BlobstoreServiceFactory;
 import com.google.appengine.api.images.ImagesService;
 import com.google.appengine.api.images.ImagesServiceFactory;
 
+import entity.Speaker;
+import static dao.OfyService.ofy;
 @SuppressWarnings("serial")
 public class SpeakerController extends HttpServlet {
 	public void doPost(HttpServletRequest req, HttpServletResponse res)
@@ -41,6 +43,8 @@ public class SpeakerController extends HttpServlet {
 		String pic = imagesService.getServingUrl(blobKey);
 		// Blob Store End
 		PrintWriter out = res.getWriter();
+		Speaker s = ofy().load().type(Speaker.class).id(name).now();
+		ofy().delete().entity(s).now();
 		if (key.equals("ignitemsit-speaker")) {
 			saveSpeaker(name, desc, shortDesc, facebook, twitter, linkedin,
 					google, pic);
