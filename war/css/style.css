@@ -255,6 +255,16 @@ header p {
 #services-section .service:hover>i.fa {
 	background: #0b3540;
 }
+
+#speaker-section i.fa {
+	color: #ffffff;
+	transition: all 0.5s;
+}
+
+}
+#speaker-section .service:hover>i.fa {
+	background: #0b3540;
+}
 /* Gallery Section 
 ==============================*/
 #works-section {
@@ -434,6 +444,7 @@ ol.type li a:hover {
 	color: #ffffff;
 	padding-right: 5px;
 }
+
 #team-section {
 	padding: 80px 0 100px 0;
 	background: url(../img/format.jpg);
@@ -447,7 +458,6 @@ ol.type li a:hover {
 	background: #312e3f;
 	text-color: #ffffff;
 }
-
 
 hr {
 	background: rgba(255, 255, 255, .5);
@@ -679,8 +689,21 @@ a:focus,.btn:focus,.btn:active:focus,.btn.active:focus,.btn.focus,.btn:active.fo
 .format {
 	border-radius: 25px;
 	border: 2px solid #ffffff;
-	text-color: #ffffff
-	padding-left: 10px;
+	text-color: #ffffff padding-left: 10px;
 	padding-right: 10px;
 	background: rgba(0, 0, 0, .1);
+}
+
+.white-list {
+	color: #ffffff;
+}
+
+.speaker-text {
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+.desc {
+	line-height: 200%;
+	font-size: large;
 }

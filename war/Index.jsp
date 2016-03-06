@@ -13,7 +13,7 @@
 <meta name="keywords"
 	content="Ignite MSIT Maharaja Surajmal Institute of Technology New Delhi NCR first talk event IgniteMSIT 30 March 2016 Diwakar Vaish speaker Abhas mitra vishwas mudagal ignitemsit.com best event of msit">
 <meta name="description"
-	content="IgniteMSIT would be the first, to ever host an Ignite Talk in Delhi-NCR. We target a selected audience of 350 budding revolutionists to be a part of this inspiring event. The speakers are from varied domains, sharing their views, ideas and experiences to the fullest, in the minimum amount of time. The event will be held at Auditorium,MSIT,Delhi,India on 30.03.2016">
+	content="IgniteMSIT would be the first, to ever host an Ignite Talk in Delhi-NCR. We target a selected audience of 500 budding revolutionists to be a part of this inspiring event. The speakers are from varied domains, sharing their views, ideas and experiences to the fullest, in the minimum amount of time. The event will be held at Auditorium,MSIT,Delhi,India on 30.03.2016">
 <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
 <meta name="google-site-verification"
 	content="2VAoCnYQe5VWD-VUTqlYPrJC-qBEpQq_fzLDF3rUtmo" />
@@ -35,6 +35,7 @@
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" href="your-path/social-share-kit.css"
 	type="text/css">
+<link rel="stylesheet" href="css/animate.min.css">
 <script type="text/javascript" src="js/modernizr.custom.js"></script>
 
 <script
@@ -64,7 +65,8 @@
 <body itemscope itemtype="http://schema.org/Event">
 	<div id="preloader">
 		<div id="status">
-			<img width="" height="" src="img/preloader.gif" height="64" width="64" alt="">
+			<img width="" height="" src="img/preloader.gif" height="64"
+				width="64" alt="">
 		</div>
 	</div>
 	<nav id="menu" class="navbar navbar-default navbar-fixed-top">
@@ -77,8 +79,8 @@
 						class="icon-bar"></span> <span class="icon-bar"></span> <span
 						class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="/home"> <img width="" height="" src="img/logo.png"
-					alt="Logo" style="width: 5em; height: 3em"></a>
+				<a class="navbar-brand" href="/home"> <img width="" height=""
+					src="img/logo.png" alt="Logo" style="width: 5em; height: 3em"></a>
 			</div>
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
@@ -113,16 +115,16 @@
 				</ol>
 				<div class="carousel-inner" style="height: 100%">
 					<div class="item active" style="height: 100%">
-						<img width="" height="" src="img/slider/bg1.jpg" style="width: 100%; height: 100%"
-							alt="First slide">
+						<img width="" height="" src="img/slider/bg1.jpg"
+							style="width: 100%; height: 100%" alt="First slide">
 					</div>
 					<div class="item" style="height: 100%">
-						<img width="" height="" src="img/slider/bg2.jpg" style="width: 100%; height: 100%"
-							data-src="" alt="Second slide">
+						<img width="" height="" src="img/slider/bg2.jpg"
+							style="width: 100%; height: 100%" data-src="" alt="Second slide">
 					</div>
 					<div class="item" style="height: 100%">
-						<img width="" height="" src="img/slider/bg3.jpg" style="width: 100%; height: 100%"
-							data-src="" alt="Third slide">
+						<img width="" height="" src="img/slider/bg3.jpg"
+							style="width: 100%; height: 100%" data-src="" alt="Third slide">
 					</div>
 				</div>
 				<a class="left carousel-control" href="#myCarousel"
@@ -157,7 +159,7 @@
 					data-wow-delay="600ms">
 					<i class="fa fa-tag"></i>
 					<h4>
-						<strong>350<br>Free Passes
+						<strong>500<br>Free Passes
 						</strong>
 					</h4>
 				</div>
@@ -184,107 +186,70 @@
 				<div class="clearfix"></div>
 			</div>
 			<div class="row">
-				<div class="portfolio-items">
-					<% 
+				<% 
 					List <Speaker> ls = ofy().load().type(Speaker.class).list();
 					Iterator <Speaker> it = ls.iterator();
 					while(it.hasNext()){
 						Speaker s = it.next();
 						if(!(s.getName().equals("guess"))){
 					%>
-					<div class="col-md-3 col-sm-6 col-lg-3 col-xs-12">
-						<div class="portfolio-item wow fadeInUp" data-wow-delay="200ms">
-							<div class="hover-bg">
-								<div class="hover-text">
-									<a href="/speaker?speaker=<%= s.getName() %>"
-										class="portfolio-link" style="text-transform: uppercase;">
-										<h4><%= s.getName() %></h4> <%= s.getShortDesc() %></a>
-									<div class="clearfix"></div>
-									<br /> <br />
-									<ul class="list-inline">
-										<%
+				<div class="wow fadeInUp" data-wow-delay="200ms">
+					<div class="row">
+						<div class="col-md-3 col-sm-6 col-lg-3 col-xs-12">
+							<span onClick="loadSpeaker(this.id)" id="<%= s.getName() %>">
+								<img src="<%= s.getPic() %>" style="width: 100%">
+								<h4>
+									<strong><%= s.getName() %></strong><br /><%= s.getShortDesc() %></h4>
+							</span>
+							<script>
+								function loadSpeaker(id) {
+									var link = "/speaker?speaker=" + id;
+									location.href = link;
+								}
+							</script>
+							<ul class="list-inline">
+								<%
 											if(!(s.getTwitter().equals(null)||s.getTwitter().equals("")))
 											{
 										%>
-										<li><a href="<%= s.getTwitter() %>" rel="twitter"><i
-												class="fa fa-twitter"></i></a></li>
-										<%
+								<li><a href="<%= s.getTwitter() %>" class=""><i
+										class="fa fa-twitter"></i></a></li>
+								<%
 											}
 											if(!(s.getFacebook().equals(null)||s.getFacebook().equals("")))
 											{
 										%>
-										<li><a href="<%= s.getFacebook() %>" rel="facebook"><i
-												class="fa fa-facebook"></i></a></li>
-										<%
+								<li><a href="<%= s.getFacebook() %>" rel="facebook"><i
+										class="fa fa-facebook white-list"></i></a></li>
+								<%
 											}
 											if(!(s.getGoogle().equals(null)||s.getGoogle().equals("")))
 											{
 										%>
-										<li><a href="<%= s.getGoogle() %>" rel="google plus"><i
-												class="fa fa-google-plus"></i></a></li>
-										<%
+								<li><a href="<%= s.getGoogle() %>" rel="google plus"><i
+										class="fa fa-google-plus white-list"></i></a></li>
+								<%
 											}
 											if(!(s.getLinkedin().equals(null)||s.getLinkedin().equals("")))
 											{
 										%>
-										<li><a href="<%= s.getLinkedin() %>" rel="linkedin"><i
-												class="fa fa-linkedin"></i></a></li>
-									</ul>
-									<%
+								<li><a href="<%= s.getLinkedin() %>" rel="linkedin"><i
+										class="fa fa-linkedin white-list"></i></a></li>
+							</ul>
+							<%
 											}
 										%>
-									<i class="fa "></i>
-								</div>
-								<img width="" height="" alt="<%= s.getName() %>" src="<%= s.getPic() %>"
-									class="img-responsive" style="width: 100%">
-							</div>
+						</div>
+						<div class="col-md-8 col-sm-6 col-lg-9 col-xs-12 speaker-text">
+							<p class="desc"><%= s.getDesc() %></p>
 						</div>
 					</div>
-					<%
+				</div>
+				<br /> <br />
+				<%
 						}
 					}
-					Speaker guess = null;
-					try{
-						guess = ofy().load().type(Speaker.class).id("guess").now();
-					}catch(Exception e){
-						e.printStackTrace();
-					}
-					if(!(guess.getName().equals(null))){
 					%>
-					<!-- 
-					<div class="col-md-3 col-sm-6 col-lg-3 col-xs-12">
-						<div class="portfolio-item wow fadeInUp" data-wow-delay="200ms">
-							<div class="hover-bg">
-								<div class="hover-text">
-									<a class="typeform-share link"
-										href="https://danish8802204230.typeform.com/to/d79trR"
-										data-mode="2" target="_blank"><h3><%= guess.getShortDesc() %></h3></a>
-									<script>
-										(function() {
-											var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = 'typef_orm', b = 'https://s3-eu-west-1.amazonaws.com/share.typeform.com/';
-											if (!gi.call(d, id)) {
-												js = ce.call(d, 'script');
-												js.id = id;
-												js.src = b + 'share.js';
-												q = gt.call(d, 'script')[0];
-												q.parentNode
-														.insertBefore(js, q)
-											}
-										})()
-									</script>
-									<div class="clearfix"></div>
-									<i class="fa "></i>
-								</div>
-								<img width="" height="" alt="Guess" src="<%= guess.getPic() %>" class="img-responsive"
-									style="width: 100%">
-							</div>
-						</div>
-					</div>
-					 -->
-					<%
-					}
-					%>
-				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-2 col-md-offset-10">
@@ -376,7 +341,7 @@
 					<p style="color: #ffffff" itemprop="description">Ignite Talks
 						is a fast-paced geek event, which brings to front the august minds
 						around us. IgniteMSIT would be the first, to ever host an Ignite
-						Talk in Delhi-NCR. We target a selected audience of 350 budding
+						Talk in Delhi-NCR. We target a selected audience of 500 budding
 						revolutionists to be a part of this inspiring event. The speakers
 						are from varied domains, sharing their views, ideas and
 						experiences to the fullest, in the minimum amount of time.</p>

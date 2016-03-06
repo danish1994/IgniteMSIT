@@ -7,8 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="keywords"
 	content="Ignite MSIT Maharaja Surajmal Institute of Technology New Delhi NCR first talk event IgniteMSIT 30 March 2016 Diwakar Vaish speaker Abhas mitra vishwas mudagal ignitemsit.com best event of msit">
-<meta name="description"
-	content="IgniteMSIT Team">
+<meta name="description" content="IgniteMSIT Team">
 <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
 <title>Meet The Team</title>
 <meta name="description" content="">
@@ -31,6 +30,7 @@
 <link rel="stylesheet" type="text/css" href="css/animate.min.css">
 <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,300'
 	rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/animate.min.css">
 <link
 	href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300'
 	rel='stylesheet' type='text/css'>
@@ -57,7 +57,8 @@
 <body>
 	<div id="preloader">
 		<div id="status">
-			<img width="" height="" src="img/preloader.gif" height="64" width="64" alt="">
+			<img width="" height="" src="img/preloader.gif" height="64"
+				width="64" alt="">
 		</div>
 	</div>
 	<nav id="menu" class="navbar navbar-default navbar-fixed-top">
@@ -70,8 +71,8 @@
 						class="icon-bar"></span> <span class="icon-bar"></span> <span
 						class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="/home"> <img width="" height="" src="img/logo.png"
-					alt="Logo" style="width: 5em; height: 3em"></a>
+				<a class="navbar-brand" href="/home"> <img width="" height=""
+					src="img/logo.png" alt="Logo" style="width: 5em; height: 3em"></a>
 			</div>
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
@@ -197,7 +198,8 @@
 				<div class="col-md-3 col-sm-6 team wow fadeInUp"
 					data-wow-delay="200ms">
 					<div class="thumbnail">
-						<img width="" height="" src="img/team/aman.jpg" alt="..." class="img-circle team-img">
+						<img width="" height="" src="img/team/aman.jpg" alt="..."
+							class="img-circle team-img">
 						<div class="caption">
 							<h3>Amandeep</h3>
 							<p>Logistics</p>
