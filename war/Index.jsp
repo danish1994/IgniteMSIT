@@ -69,7 +69,8 @@
 				width="64" alt="">
 		</div>
 	</div>
-	<nav id="menu" class="navbar navbar-default navbar-fixed-top">
+	<nav id="menu" class="navbar navbar-default navbar-fixed-top"
+		style="width: 100%">
 		<div class="container" style="height: 6em">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
@@ -102,37 +103,24 @@
 	</nav>
 
 	<!-- Header -->
-	<header class="text-center" name="home" style="height: 90vh">
-		<div class="intro-text" style="height: 100%">
-			<div id="myCarousel" class="carousel slide" data-ride="carousel"
-				style="height: 100%">
-				<!-- Indicators -->
-
-				<ol class="carousel-indicators">
-					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-					<li data-target="#myCarousel" data-slide-to="1"></li>
-					<li data-target="#myCarousel" data-slide-to="2"></li>
-				</ol>
-				<div class="carousel-inner" style="height: 100%">
-					<div class="item active" style="height: 100%">
-						<img width="" height="" src="img/slider/bg1.jpg"
-							style="width: 100%; height: 100%" alt="First slide">
-					</div>
-					<div class="item" style="height: 100%">
-						<img width="" height="" src="img/slider/bg2.jpg"
-							style="width: 100%; height: 100%" data-src="" alt="Second slide">
-					</div>
-					<div class="item" style="height: 100%">
-						<img width="" height="" src="img/slider/bg3.jpg"
-							style="width: 100%; height: 100%" data-src="" alt="Third slide">
-					</div>
+	<header class="text-center" name="home" style="height: 100vh">
+		<div class="intro-text" style="height: 100%" id="home-section">
+			<img src="img/skyline-inverted.png" class="wow fadeInLeft"
+				data-wow-delay="200ms" style="width: 100%; height: 20vh;">
+			<div style="height: 10vh"></div>
+			<div class="row" style="width: 100%">
+				<div class="col-md-6">
+					<img src="img/logo_real.png" class="wow fadeInUp"
+						data-wow-delay="600ms" style="aling: center; height: 40vh;">
 				</div>
-				<a class="left carousel-control" href="#myCarousel"
-					data-slide="prev"><span
-					class="glyphicon glyphicon-chevron-left"></span></a> <a
-					class="right carousel-control" href="#myCarousel" data-slide="next"><span
-					class="glyphicon glyphicon-chevron-right"></span></a>
+				<div class="col-md-6">
+					<img src="img/home-text.png" class="wow fadeInUp"
+						data-wow-delay="600ms" style="aling: center; height: 40vh;">
+				</div>
 			</div>
+			<div style="height: 10vh"></div>
+			<img src="img/skyline.png" class="wow fadeInRight"
+				data-wow-delay="1000ms" style="width: 100%; height: 20vh;">
 		</div>
 	</header>
 	<!-- Services Section -->
@@ -189,11 +177,14 @@
 				<% 
 					List <Speaker> ls = ofy().load().type(Speaker.class).list();
 					Iterator <Speaker> it = ls.iterator();
+					int i = 0;
 					while(it.hasNext()){
+						i++;
 						Speaker s = it.next();
 						if(!(s.getName().equals("guess"))){
-					%>
-				<div class="wow fadeInUp" data-wow-delay="200ms">
+							if(i%2==1){
+				%>
+				<div class="wow fadeInUp" data-wow-delay="<%= i*200 %>ms">
 					<div class="row">
 						<div class="col-md-3 col-sm-6 col-lg-3 col-xs-12">
 							<span onClick="loadSpeaker(this.id)" id="<%= s.getName() %>">
@@ -248,6 +239,64 @@
 				<br /> <br />
 				<%
 						}
+							else{
+							%>
+				<div class="wow fadeInUp" data-wow-delay="200ms">
+					<div class="row">
+						<div class="col-md-8 col-sm-6 col-lg-9 col-xs-12 speaker-text">
+							<p class="desc"><%= s.getDesc() %></p>
+						</div>
+						<div class="col-md-3 col-sm-6 col-lg-3 col-xs-12">
+							<span onClick="loadSpeaker(this.id)" id="<%= s.getName() %>">
+								<img src="<%= s.getPic() %>" style="width: 100%">
+								<h4>
+									<strong><%= s.getName() %></strong><br /><%= s.getShortDesc() %></h4>
+							</span>
+							<script>
+								function loadSpeaker(id) {
+									var link = "/speaker?speaker=" + id;
+									location.href = link;
+								}
+							</script>
+							<ul class="list-inline">
+								<%
+														if(!(s.getTwitter().equals(null)||s.getTwitter().equals("")))
+														{
+													%>
+								<li><a href="<%= s.getTwitter() %>" class=""><i
+										class="fa fa-twitter"></i></a></li>
+								<%
+														}
+														if(!(s.getFacebook().equals(null)||s.getFacebook().equals("")))
+														{
+													%>
+								<li><a href="<%= s.getFacebook() %>" rel="facebook"><i
+										class="fa fa-facebook white-list"></i></a></li>
+								<%
+														}
+														if(!(s.getGoogle().equals(null)||s.getGoogle().equals("")))
+														{
+													%>
+								<li><a href="<%= s.getGoogle() %>" rel="google plus"><i
+										class="fa fa-google-plus white-list"></i></a></li>
+								<%
+														}
+														if(!(s.getLinkedin().equals(null)||s.getLinkedin().equals("")))
+														{
+													%>
+								<li><a href="<%= s.getLinkedin() %>" rel="linkedin"><i
+										class="fa fa-linkedin white-list"></i></a></li>
+							</ul>
+							<%
+														}
+													%>
+						</div>
+					</div>
+				</div>
+				<br /> <br />
+				<%
+						}
+					}
 					}
 					%>
 			</div>

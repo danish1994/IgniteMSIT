@@ -530,6 +530,13 @@ img.img-circle.team-img {
 	color: #ffffff;
 }
 
+#home-section {
+	background: url(../img/road.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	color: #ffffff;
+}
+
 #testimonial {
 	padding: 30px 0;
 }
