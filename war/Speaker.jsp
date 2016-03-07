@@ -118,12 +118,12 @@
 				<hr>
 				<div class="clearfix"></div>
 			</div>
-			<div class="row">
+			<div class="row block-container">
 				<div class="col-md-3 wow fadeInLeft">
 					<img width="" height="" style="width: 100%" src="<%= s.getPic() %>"
 						class="img-responsive" alt="<%= s.getPic() %>">
 				</div>
-				<div class="col-md-7 wow fadeInRight">
+				<div class="col-md-7 wow fadeInRight" >
 					<h4><%= s.getShortDesc() %></h4>
 					<div class="don-share" data-style="icons" data-bubbles="none"
 						data-limit="3">

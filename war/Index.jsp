@@ -70,7 +70,7 @@
 		</div>
 	</div>
 	<nav id="menu" class="navbar navbar-default navbar-fixed-top"
-		style="width: 100%">
+		style="border-width: 0px; padding-left: 0px;">
 		<div class="container" style="height: 6em">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
@@ -108,14 +108,14 @@
 			<img src="img/skyline-inverted.png" class="wow fadeInLeft"
 				data-wow-delay="200ms" style="width: 100%; height: 20vh;">
 			<div style="height: 10vh"></div>
-			<div class="row" style="width: 100%">
-				<div class="col-md-6">
-					<img src="img/logo_real.png" class="wow fadeInUp"
-						data-wow-delay="600ms" style="aling: center; height: 40vh;">
+			<div class="row" style="width: 100%;; height: 40vh;">
+				<div class="col-md-6 col-sm-6 col-xs-6 col-lg-6">
+					<img src="img/home.png" class="wow fadeInUp" data-wow-delay="600ms"
+						style="aling: center; width: 50%; height: 50vh">
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-6 col-sm-6 col-xs-6 col-lg-6">
 					<img src="img/home-text.png" class="wow fadeInUp"
-						data-wow-delay="600ms" style="aling: center; height: 40vh;">
+						data-wow-delay="600ms" style="aling: center; width: 50%; height: 40vh">
 				</div>
 			</div>
 			<div style="height: 10vh"></div>
@@ -164,16 +164,16 @@
 	</div>
 	<!-- Speaker Section -->
 	<div id="speaker-section" class="text-center">
-		<div class="container">
+		<div class="container block-container">
 			<!-- Container -->
 			<div class="section-title wow fadeInDown">
-				<h2>
-					<strong>Speakers</strong>
+				<h2 >
+					<strong class="text-background">Speakers</strong>
 				</h2>
 				<hr>
 				<div class="clearfix"></div>
 			</div>
-			<div class="row">
+			<div class="row" >
 				<% 
 					List <Speaker> ls = ofy().load().type(Speaker.class).list();
 					Iterator <Speaker> it = ls.iterator();
@@ -312,8 +312,8 @@
 	<div id="team-section" class="text-center">
 		<div class="container">
 			<div class="section-title wow fadeInDown">
-				<h2>
-					<strong>Format</strong>
+				<h2 >
+					<strong class="text-background">Format</strong>
 				</h2>
 				<hr>
 				<div class="clearfix"></div>
@@ -357,16 +357,17 @@
 	<div id="about-section">
 		<div class="container">
 			<div class="section-title text-center wow fadeInDown">
-				<h2>
-					<strong>About</strong> us
+				<h2 >
+					<strong class="text-background">About us</strong>
 				</h2>
 				<hr>
 				<div class="clearfix"></div>
 			</div>
-			<div class="row">
-				<div class="col-md-6 col-sm-12 wow fadeInLeft">
-					<img alt="about" src="img/about.jpg" class="img-responsive"
-						width="" height="">
+			<div class="row block-container">
+				<div class="col-md-6 col-sm-12 wow fadeInLeft about-text">
+					<h2>
+						<br />5 Minutes<br />20 Slides<br />What will you say?
+					</h2>
 				</div>
 				<div class="col-md-6 col-sm-12 wow fadeInRight">
 					<h4>About Ignite MSIT</h4>
@@ -408,7 +409,7 @@
 	<div id="testimonials-section" class="text-center">
 		<div class="container">
 			<div class="section-title wow fadeInDown">
-				<h2>Register Now</h2>
+				<h2><strong class="text-background">Register Now</strong></h2>
 				<hr>
 			</div>
 			<div class="row">
@@ -464,8 +465,8 @@
 		itemscope itemtype="http://schema.org/Place">
 		<div class="container">
 			<div class="section-title wow fadeInDown ">
-				<h2>
-					<strong>Contact</strong> Us
+				<h2 >
+					<strong class="text-background">Contact Us</strong>
 				</h2>
 				<hr>
 			</div>

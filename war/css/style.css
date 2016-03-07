@@ -220,8 +220,14 @@ header p {
 
 #speaker-section {
 	padding: 80px 0 100px 0;
-	background-color: #663333;
+	background: url(../img/speaker.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-attachment: fixed;
 	color: #ffffff;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-attachment: fixed;
 }
 
 #services-section {
@@ -420,8 +426,11 @@ ol.type li a:hover {
 /* About Section */
 #about-section {
 	padding: 80px 0;
-	background: #3B240B;
+	background: url(../img/about.png);
+	background-size: 100% 100%;
+	background-attachment: fixed;
 	color: #ffffff;
+	background-attachment: fixed;
 }
 
 #about-section h4 {
@@ -520,11 +529,10 @@ img.img-circle.team-img {
 .owl-theme .owl-controls .owl-page.active span {
 	background: #f1c40f;
 }
-/* Testimonials Section */
+
 #testimonials-section {
 	padding: 80px 0;
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#032731+0,032e3a+20,032e3a+100,032731+100 */
-	background: url(../img/testimonials-bg.jpg);
+	background: url(../img/register.png);
 	background-size: cover;
 	background-attachment: fixed;
 	color: #ffffff;
@@ -532,7 +540,8 @@ img.img-circle.team-img {
 
 #home-section {
 	background: url(../img/road.jpg);
-	background-size: cover;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 	background-attachment: fixed;
 	color: #ffffff;
 }
@@ -554,7 +563,9 @@ img.img-circle.team-img {
 /* Contact Section */
 #contact-section {
 	padding: 80px 0 20px 0;
-	background-color: #0b3540;
+	background: url(../img/testimonials-bg.jpg);
+	background-size: cover;
+	background-attachment: fixed;
 }
 
 #contact-section h3 {
@@ -707,10 +718,48 @@ a:focus,.btn:focus,.btn:active:focus,.btn.active:focus,.btn.focus,.btn:active.fo
 
 .speaker-text {
 	text-align: justify;
-	text-justify: inter-word;
+	text-justify: auto;
+	word-wrap: break-word;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.speaker-image {
+	padding-right: 10px;
+	padding-left: 10px;
 }
 
 .desc {
 	line-height: 200%;
 	font-size: large;
+}
+
+.text-background {
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #541D1F;
+	font-family: "Poplar Std";
+	background-color: #541D1F;
+	text-transform: uppercase;
+}
+
+.about-text {
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-family: "Poplar Std";
+	text-align: center;
+}
+
+@font-face {
+	font-family: "Poplar Std";
+	src: url("http://www.myfontfree.com/data/54/p/poplar-std/PoplarStd.otf");
+}
+
+.block-container {
+	background-color: rgba(0, 0, 0, 0.7);
+	padding: 20px 20px 20px 20px;
 }
