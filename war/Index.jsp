@@ -18,30 +18,40 @@
 <meta name="google-site-verification"
 	content="2VAoCnYQe5VWD-VUTqlYPrJC-qBEpQq_fzLDF3rUtmo" />
 <meta name="msvalidate.01" content="FB4B640430CE5941B73AC59B120A21CE" />
-
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 <title>Ignite MSIT</title>
+<!-- Favicon -->
+<link rel="shortcut icon" type="image/icon"
+	href="assets/images/favicon.ico" />
+<!-- Font Awesome -->
+<link href="assets/css/font-awesome.css" rel="stylesheet">
 <!-- Bootstrap -->
-<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-<link rel="stylesheet" type="text/css"
-	href="fonts/font-awesome/css/font-awesome.css">
+<link href="assets/css/bootstrap.css" rel="stylesheet">
+<!-- Slick slider -->
+<link rel="stylesheet" type="text/css" href="assets/css/slick.css" />
+<!-- Fancybox slider -->
+<link rel="stylesheet" href="assets/css/jquery.fancybox.css"
+	type="text/css" media="screen" />
+<!-- Animate css -->
+<link rel="stylesheet" type="text/css" href="assets/css/animate.css" />
+<!-- Theme color -->
+<link id="switcher" href="assets/css/theme-color/red-theme.css"
+	rel="stylesheet">
 
-<!-- Slider
-    ================================================== -->
-<link href="css/owl.carousel.css" rel="stylesheet" media="screen">
-<link href="css/owl.theme.css" rel="stylesheet" media="screen">
+<!-- Main Style -->
+<link href="style.css" rel="stylesheet">
 
-<!-- Stylesheet
-    ================================================== -->
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<link rel="stylesheet" href="your-path/social-share-kit.css"
-	type="text/css">
-<link rel="stylesheet" href="css/animate.min.css">
-<script type="text/javascript" src="js/modernizr.custom.js"></script>
+<!-- Fonts -->
+<!-- Open Sans for body font -->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans'
+	rel='stylesheet' type='text/css'>
+<!-- Raleway for Title -->
+<link href='https://fonts.googleapis.com/css?family=Raleway'
+	rel='stylesheet' type='text/css'>
+<!-- Pacifico for 404 page   -->
+<link href='https://fonts.googleapis.com/css?family=Pacifico'
+	rel='stylesheet' type='text/css'>
 
-<script
-	src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<link href="http://www.jqueryscript.net/css/jquerysctipttop.css"
-	rel="stylesheet" type="text/css">
 <script>
 	(function(i, s, o, g, r, a, m) {
 		i['GoogleAnalyticsObject'] = r;
@@ -58,398 +68,126 @@
 	ga('create', 'UA-74431622-1', 'auto');
 	ga('send', 'pageview');
 </script>
-
-<script src="https://cdn.jsdelivr.net/sharer.js/latest/sharer.min.js"></script>
-
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 <body itemscope itemtype="http://schema.org/Event">
+	<!-- BEGAIN PRELOADER 
 	<div id="preloader">
-		<div id="status">
-			<img width="" height="" src="img/preloader.gif" height="64"
-				width="64" alt="">
-		</div>
+		<div class="loader">&nbsp;</div>
 	</div>
-	<nav id="menu" class="navbar navbar-default navbar-fixed-top"
-		style="border-width: 0px; padding-left: 0px;">
-		<div class="container" style="height: 6em">
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed"
-					data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					<span class="sr-only">Toggle navigation</span> <span
-						class="icon-bar"></span> <span class="icon-bar"></span> <span
-						class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="/home"> <img width="" height=""
-					src="img/logo.png" alt="Logo" style="width: 5em; height: 3em"></a>
-			</div>
+	 END PRELOADER -->
 
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse"
-				id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#home" class="page-scroll">Home</a></li>
-					<li><a href="#speaker-section" class="page-scroll">Speakers</a></li>
-					<li><a href="#team-section" class="page-scroll">Format</a></li>
-					<li><a href="#about-section" class="page-scroll">About</a></li>
-					<li><a href="#testimonials-section" class="page-scroll">Register</a></li>
-					<li><a href="/team">Team</a></li>
-					<li><a href="#contact-section" class="page-scroll">Contact</a></li>
-				</ul>
-			</div>
-			<!-- /.navbar-collapse -->
-		</div>
-		<!-- /.container-fluid -->
-	</nav>
+	<!-- SCROLL TOP BUTTON -->
+	<a class="scrollToTop" href="home"><i class="fa fa-chevron-up"></i></a>
+	<!-- END SCROLL TOP BUTTON -->
 
-	<!-- Header -->
-	<header class="text-center" name="home" style="height: 100vh">
-		<div class="intro-text" style="height: 100%" id="home-section">
-			<img src="img/skyline-inverted.png" class="wow fadeInLeft"
-				data-wow-delay="200ms" style="width: 100%; height: 20vh;">
-			<div style="height: 10vh"></div>
-			<div class="row" style="width: 100%;; height: 40vh;">
-				<div class="col-md-6 col-sm-6 col-xs-6 col-lg-6">
-					<img src="img/home.png" class="wow fadeInUp" data-wow-delay="600ms"
-						style="aling: center; width: 50%; height: 50vh">
-				</div>
-				<div class="col-md-6 col-sm-6 col-xs-6 col-lg-6">
-					<img src="img/home-text.png" class="wow fadeInUp"
-						data-wow-delay="600ms" style="aling: center; width: 50%; height: 40vh">
+	<!-- Start header section -->
+	<header id="header">
+		<div class="header-inner">
+			<!-- Header image -->
+			<img src="assets/images/header-bg.jpg" alt="img">
+			<div class="header-overlay">
+				<div class="header-content">
+					<!-- Start header content slider -->
+					<h2 class="header-slide">
+						We will <span>inspire</span> <span>encourage</span> <span>ignite</span>
+						you
+					</h2>
+					<!-- End header content slider -->
+					<!-- Header btn area -->
+					<div class="header-btn-area">
+						<a class="download-btn menu-scroll" href="#menu-area">Have a
+							Look</a>
+					</div>
 				</div>
 			</div>
-			<div style="height: 10vh"></div>
-			<img src="img/skyline.png" class="wow fadeInRight"
-				data-wow-delay="1000ms" style="width: 100%; height: 20vh;">
 		</div>
 	</header>
-	<!-- Services Section -->
-	<div id="services-section" class="text-center">
-		<div class="container">
-			<div class="space"></div>
-			<div class="row">
-				<div class="col-md-3 col-sm-6 service wow fadeInUp"
-					data-wow-delay="200ms">
-					<i class="fa fa-calendar"></i>
-					<h4>
-						<strong>2016<br>March 30
-						</strong>
-					</h4>
-				</div>
-				<div class="col-md-3 col-sm-6 service wow fadeInUp"
-					data-wow-delay="400ms">
-					<i class="fa fa-location-arrow"></i>
-					<h4>
-						<strong>Maharaja Surajmal Institute of Technology</strong>
-					</h4>
-				</div>
-				<div class="col-md-3 col-sm-6 service wow fadeInUp"
-					data-wow-delay="600ms">
-					<i class="fa fa-tag"></i>
-					<h4>
-						<strong>500<br>Free Passes
-						</strong>
-					</h4>
-				</div>
-				<div class="col-md-3 col-sm-6 service wow fadeInUp"
-					data-wow-delay="800ms">
-					<i class="fa fa-info"></i>
-					<h4>
-						<strong>10<br>Speakers
-						</strong>
-					</h4>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Speaker Section -->
-	<div id="speaker-section" class="text-center">
-		<div class="container block-container">
-			<!-- Container -->
-			<div class="section-title wow fadeInDown">
-				<h2 >
-					<strong class="text-background">Speakers</strong>
-				</h2>
-				<hr>
-				<div class="clearfix"></div>
-			</div>
-			<div class="row" >
-				<% 
-					List <Speaker> ls = ofy().load().type(Speaker.class).list();
-					Iterator <Speaker> it = ls.iterator();
-					int i = 0;
-					while(it.hasNext()){
-						i++;
-						Speaker s = it.next();
-						if(!(s.getName().equals("guess"))){
-							if(i%2==1){
-				%>
-				<div class="wow fadeInUp" data-wow-delay="<%= i*200 %>ms">
-					<div class="row">
-						<div class="col-md-3 col-sm-6 col-lg-3 col-xs-12">
-							<span onClick="loadSpeaker(this.id)" id="<%= s.getName() %>">
-								<img src="<%= s.getPic() %>" style="width: 100%">
-								<h4>
-									<strong><%= s.getName() %></strong><br /><%= s.getShortDesc() %></h4>
-							</span>
-							<script>
-								function loadSpeaker(id) {
-									var link = "/speaker?speaker=" + id;
-									location.href = link;
-								}
-							</script>
-							<ul class="list-inline">
-								<%
-											if(!(s.getTwitter().equals(null)||s.getTwitter().equals("")))
-											{
-										%>
-								<li><a href="<%= s.getTwitter() %>" class=""><i
-										class="fa fa-twitter"></i></a></li>
-								<%
-											}
-											if(!(s.getFacebook().equals(null)||s.getFacebook().equals("")))
-											{
-										%>
-								<li><a href="<%= s.getFacebook() %>" rel="facebook"><i
-										class="fa fa-facebook white-list"></i></a></li>
-								<%
-											}
-											if(!(s.getGoogle().equals(null)||s.getGoogle().equals("")))
-											{
-										%>
-								<li><a href="<%= s.getGoogle() %>" rel="google plus"><i
-										class="fa fa-google-plus white-list"></i></a></li>
-								<%
-											}
-											if(!(s.getLinkedin().equals(null)||s.getLinkedin().equals("")))
-											{
-										%>
-								<li><a href="<%= s.getLinkedin() %>" rel="linkedin"><i
-										class="fa fa-linkedin white-list"></i></a></li>
-							</ul>
-							<%
-											}
-										%>
-						</div>
-						<div class="col-md-8 col-sm-6 col-lg-9 col-xs-12 speaker-text">
-							<p class="desc"><%= s.getDesc() %></p>
-						</div>
-					</div>
-				</div>
-				<br /> <br />
-				<%
-						}
-							else{
-							%>
-				<div class="wow fadeInUp" data-wow-delay="200ms">
-					<div class="row">
-						<div class="col-md-8 col-sm-6 col-lg-9 col-xs-12 speaker-text">
-							<p class="desc"><%= s.getDesc() %></p>
-						</div>
-						<div class="col-md-3 col-sm-6 col-lg-3 col-xs-12">
-							<span onClick="loadSpeaker(this.id)" id="<%= s.getName() %>">
-								<img src="<%= s.getPic() %>" style="width: 100%">
-								<h4>
-									<strong><%= s.getName() %></strong><br /><%= s.getShortDesc() %></h4>
-							</span>
-							<script>
-								function loadSpeaker(id) {
-									var link = "/speaker?speaker=" + id;
-									location.href = link;
-								}
-							</script>
-							<ul class="list-inline">
-								<%
-														if(!(s.getTwitter().equals(null)||s.getTwitter().equals("")))
-														{
-													%>
-								<li><a href="<%= s.getTwitter() %>" class=""><i
-										class="fa fa-twitter"></i></a></li>
-								<%
-														}
-														if(!(s.getFacebook().equals(null)||s.getFacebook().equals("")))
-														{
-													%>
-								<li><a href="<%= s.getFacebook() %>" rel="facebook"><i
-										class="fa fa-facebook white-list"></i></a></li>
-								<%
-														}
-														if(!(s.getGoogle().equals(null)||s.getGoogle().equals("")))
-														{
-													%>
-								<li><a href="<%= s.getGoogle() %>" rel="google plus"><i
-										class="fa fa-google-plus white-list"></i></a></li>
-								<%
-														}
-														if(!(s.getLinkedin().equals(null)||s.getLinkedin().equals("")))
-														{
-													%>
-								<li><a href="<%= s.getLinkedin() %>" rel="linkedin"><i
-										class="fa fa-linkedin white-list"></i></a></li>
-							</ul>
-							<%
-														}
-													%>
-						</div>
-					</div>
-				</div>
-				<br /> <br />
-				<%
-						}
-					}
-					}
-					%>
-			</div>
-			<div class="row">
-				<div class="col-md-2 col-md-offset-10">
-					<h4>More Coming Soon.</h4>
-				</div>
-			</div>
+	<!-- End header section -->
 
-		</div>
-	</div>
-	<!-- Format Section -->
-	<div id="team-section" class="text-center">
-		<div class="container">
-			<div class="section-title wow fadeInDown">
-				<h2 >
-					<strong class="text-background">Format</strong>
-				</h2>
-				<hr>
-				<div class="clearfix"></div>
+	<!-- Start menu section -->
+	<section id="menu-area">
+		<nav class="navbar navbar-default main-navbar" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+					<button type="button" class="navbar-toggle collapsed"
+						data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+						aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span> <span
+							class="icon-bar"></span> <span class="icon-bar"></span> <span
+							class="icon-bar"></span>
+					</button>
+					<!-- LOGO -->
+					<a class="navbar-brand logo" href="/home"><img
+						src="assets/images/logo_real.png" alt="logo"></a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul id="top-menu" class="nav navbar-nav main-nav menu-scroll">
+						<li class="active"><a href="#menu-area">Home</a></li>
+						<li><a href="#from-blog">Speakers</a></li>
+						<li><a href="#service">Format</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#call-to-action">Register</a></li>
+						<li><a href="team">Team </a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+				<!--/.nav-collapse -->
 			</div>
-			<div id="row">
-				<div
-					class="col-md-2 col-sm-12 col-md-offset-2 col-xs-12 team wow fadeInUp format"
-					data-wow-delay="200ms">
-					<div class="thumbnail">
-						<div class="caption">
-							<h3>Ignite Presentation</h3>
-							<p>5 Minutes/Speaker</p>
-						</div>
-					</div>
-				</div>
-				<div
-					class="col-md-2 col-sm-12 col-md-offset-1 col-xs-12 team wow fadeInUp format"
-					data-wow-delay="400ms">
-					<div class="thumbnail">
-						<div class="caption">
-							<h3>Talk</h3>
-							<p>15 - 20 Minutes/Speaker</p>
-						</div>
-					</div>
-				</div>
-				<div
-					class="col-md-2 col-sm-12 col-md-offset-1 col-xs-12 team wow fadeInUp format"
-					data-wow-delay="600ms">
-					<div class="thumbnail">
-						<div class="caption">
-							<h3>Q&A / Interview</h3>
-							<p>15 - 20 Minutes/Speaker</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+		</nav>
+	</section>
+	<!-- End menu section -->
 
-	<!-- About Section -->
-	<div id="about-section">
-		<div class="container">
-			<div class="section-title text-center wow fadeInDown">
-				<h2 >
-					<strong class="text-background">About us</strong>
-				</h2>
-				<hr>
-				<div class="clearfix"></div>
-			</div>
-			<div class="row block-container">
-				<div class="col-md-6 col-sm-12 wow fadeInLeft about-text">
-					<h2>
-						<br />5 Minutes<br />20 Slides<br />What will you say?
-					</h2>
-				</div>
-				<div class="col-md-6 col-sm-12 wow fadeInRight">
-					<h4>About Ignite MSIT</h4>
-					<div class="don-share" data-style="icons" data-bubbles="none"
-						data-limit="3">
-						<div class="don-share-facebook"></div>
-						<div class="don-share-twitter"></div>
-						<div class="don-share-google"></div>
-					</div>
-					<script type="text/javascript">
-						(function() {
-							var dr = document.createElement('script');
-							dr.type = 'text/javascript';
-							dr.async = true;
-							dr.src = '//share.donreach.com/buttons.js';
-							(document.getElementsByTagName('head')[0] || document
-									.getElementsByTagName('body')[0])
-									.appendChild(dr);
-						})();
-					</script>
-					<p style="color: #ffffff" itemprop="description">Ignite Talks
-						is a fast-paced geek event, which brings to front the august minds
-						around us. IgniteMSIT would be the first, to ever host an Ignite
-						Talk in Delhi-NCR. We target a selected audience of 500 budding
-						revolutionists to be a part of this inspiring event. The speakers
-						are from varied domains, sharing their views, ideas and
-						experiences to the fullest, in the minimum amount of time.</p>
-					<a href="/team"><button class="btn btn-lg btn-primary">Check
-							Our Team</button></a>
-					<meta itemprop="startDate" content="2016-03-30T10:00">
-					<meta itemprop="endDate" content="2016-03-30T16:00">
-					<div></div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- Register Section -->
-	<div id="testimonials-section" class="text-center">
-		<div class="container">
-			<div class="section-title wow fadeInDown">
-				<h2><strong class="text-background">Register Now</strong></h2>
-				<hr>
-			</div>
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2">
-					<div class="fadeInUp" data-wow-delay="200ms">
-						<p>
-							<strong>By registering, you'll be considered as a
-								priority at the time of selection of audience, on a
-								first-come-first-serve basis over those who haven't registered.</strong>
-						</p>
-						<button class="btn btn-lg btn-primary" data-toggle="modal"
-							data-target="#registerModal">Register Now</button>
-						<div id="registerModal" class="modal fade">
-							<div class="modal-dialog" style="color: #000000; width: 90%">
-								<div class="modal-content">
-									<div class="modal-header">
-										<button type="button" class="close" data-dismiss="modal">&times;</button>
-										<h4 class="modal-title">Register</h4>
+	<!-- Start intro section -->
+	<section id="counter">
+		<img src="assets/images/counter-bg.jpg" alt="img">
+		<div class="counter-overlay">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<!-- Start counter area -->
+						<div class="counter-area">
+							<div class="col-md-3 col-sm-6 col-xs-6">
+								<div class="single-counter">
+									<span class="fa fa-calendar"></span>
+									<div class="counter-count">
+										<p>
+											<br />30th March 2016
+										</p>
 									</div>
-									<div class="modal-body">
-										<h3>
-											If the form is not Loading.<br>Please Login into your
-											Google Account or <a id="registerButton">Click Here</a>
-										</h3>
-										<iframe src="http://goo.gl/forms/0K3pHX7nPc"
-											style="width: 100%; height: 60vh; border: 0px;">Loading...</iframe>
-										<script>
-											$("#registerButton")
-													.click(
-															function() {
-																window
-																		.open(
-																				'http://goo.gl/forms/0K3pHX7nPc',
-																				'_blank');
-															});
-										</script>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-6">
+								<div class="single-counter">
+									<span class="fa fa-location-arrow"></span>
+									<div class="counter-count">
+										<p>
+											Maharaja<br />Surajmal Institute<br />of Technology
+										</p>
 									</div>
-									<div class="modal-footer">
-										<button type="button" class="btn btn-default"
-											data-dismiss="modal">Close</button>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-6">
+								<div class="single-counter">
+									<span class="fa fa-tag"></span>
+									<div class="counter-count">
+										<p>500 Passes</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-6">
+								<div class="single-counter">
+									<span class="fa fa-info"></span>
+									<div class="counter-count">
+										<p>
+											Brilliant<br />Speakers
+										</p>
 									</div>
 								</div>
 							</div>
@@ -458,60 +196,287 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
+	<!-- End intro section -->
 
-	<!-- Contact Section -->
-	<div id="contact-section" class="text-center" itemprop="location"
-		itemscope itemtype="http://schema.org/Place">
+	<!-- Start from blog section -->
+	<section id="from-blog">
 		<div class="container">
-			<div class="section-title wow fadeInDown ">
-				<h2 >
-					<strong class="text-background">Contact Us</strong>
-				</h2>
-				<hr>
-			</div>
-			<div class="col-md-10 col-md-offset-1 wow fadeInUp"
-				data-wow-delay="200ms">
-				<div class="col-md-4">
-					<i class="fa fa-map-marker fa-2x"></i>
-					<p class="section-title" itemprop="url" href="http://msit.in">
-						<span itemprop="name"> Maharaja Surajmal Institute of
-							Technology,<br> New Delhi, Delhi
-						</span> <input type="hidden" itemprop="address" itemscope
-							itemtype="http://schema.org/PostalAddress" value="New Delhi">
-				</div>
-				<div class="col-md-4">
-					<i class="fa fa-envelope-o fa-2x"></i>
-					<p class="section-title">info@ignitemsit.com</p>
-				</div>
-				<div class="col-md-4">
-					<i class="fa fa-phone fa-2x"></i>
-					<p class="section-title">+919582323805</p>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-			<br /> <br />
-			<div class="col-md-10 col-md-offset-1 wow fadeInUp"
-				data-wow-delay="400ms">
-				<iframe
-					src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Maharaja Surajmal Institute of Technology&amp;output=embed"
-					style="width: 100%; height: 75vh; border: 0px;"></iframe>
-				<div id="map">
-					<div id="gmap-wrap">
-						<div id="gmap"></div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="from-blog-area">
+						<div class="title-area">
+							<h2 class="tittle">
+								Our <span>Speakers</span>
+							</h2>
+							<span class="tittle-line"></span>
+						</div>
+						<!-- From Blog content -->
+						<div class="from-blog-content">
+							<div class="row">
+								<% 
+									List <Speaker> ls = ofy().load().type(Speaker.class).list();
+									Iterator <Speaker> it = ls.iterator();
+									int i = 0;
+									while(it.hasNext()){
+										Speaker s = it.next();
+								%>
+								<div class="col-md-4 col-xs-12 col-sm-4 wow slideInUp"
+									data-wow-delay="<%= 200*((i%3)+1) %>ms">
+									<article class="single-from-blog">
+										<figure>
+											<img src="<%= s.getPic() %>" alt="img">
+										</figure>
+										<div class="blog-title">
+											<h2>
+												<%= s.getName() %>
+											</h2>
+											<p>
+												<%= s.getShortDesc() %>
+											</p>
+										</div>
+										<p><%= s.getDesc() %></p>
+										<div class="blog-footer">
+											<!-- 
+											<a href="<%= s.getFacebook() %>"><span
+												class="fa fa-facebook"></span></a> <a
+												href="<%= s.getTwitter() %>"><span class="fa fa-twitter"></span></a>
+											<a href="<%= s.getLinkedin() %>"><span
+												class="fa fa-linkedin"></span></a> <a
+												href="<%= s.getGoogle() %>"><span
+												class="fa fa-google-plus"></span></a>
+												 -->
+											<a href="https://www.google.co.in/search?q=<%=s.getName()%>"
+												target="_blank"><span class="fa fa-google"></span></a>
+										</div>
+									</article>
+								</div>
+								<%
+										i++;
+									}
+								%>
+							</div>
+						</div>
 					</div>
 				</div>
-				<!--/#map-->
 			</div>
 		</div>
-	</div>
-	<div id="footer" class="navbar-default">
+	</section>
+	<!-- End from blog section -->
+
+	<!-- Start Format section -->
+	<section id="service">
 		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="service-area">
+						<div class="title-area">
+							<h2 class="tittle">Format</h2>
+							<span class="tittle-line"></span>
+						</div>
+						<!-- service content -->
+						<div class="service-content">
+							<ul class="service-table">
+								<li class="col-md-4 col-sm-12">
+									<div class="single-service wow slideInUp">
+										<span class="fa fa-edit service-icon"></span>
+										<h4 class="service-title">Ignite Presentation</h4>
+										<p>5 Minutes / Speaker</p>
+									</div>
+								</li>
+								<li class="col-md-4 col-sm-12">
+									<div class="single-service wow slideInUp">
+										<span class="fa fa-sort-amount-asc service-icon"></span>
+										<h4 class="service-title">Talk</h4>
+										<p>5 Minutes / Speaker</p>
+									</div>
+								</li>
+								<li class="col-md-4 col-sm-12">
+									<div class="single-service wow slideInUp">
+										<span class="fa fa-map-o service-icon"></span>
+										<h4 class="service-title">Q & A / Interview</h4>
+										<p>5 Minutes / Speaker</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End service section -->
+
+
+	<!-- Start about section -->
+	<section id="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<!-- Start welcome area -->
+					<div class="welcome-area">
+						<div class="title-area">
+							<h2 class="tittle">
+								Ignite <span>MSIT</span>
+							</h2>
+							<span class="tittle-line"></span>
+						</div>
+					</div>
+					<!-- End welcome area -->
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="about-area">
+						<div class="row">
+							<div class="col-md-5 col-sm-6 col-xs-12">
+								<div class="about-left wow fadeInLeft">
+									<img src="assets/images/about.jpg" alt="img"
+										style="width: 100%; height: 100%;">
+								</div>
+							</div>
+							<div class="col-md-7 col-sm-6 col-xs-12">
+								<div class="about-right wow fadeInRight">
+									<div class="title-area">
+										<h2 class="tittle">
+											About <span>Ignite</span> MSIT
+										</h2>
+										<span class="tittle-line"></span>
+										<div class="don-share" data-style="icons" data-bubbles="none"
+											data-limit="3">
+											<div class="don-share-facebook"></div>
+											<div class="don-share-twitter"></div>
+											<div class="don-share-google"></div>
+										</div>
+										<script type="text/javascript">
+											(function() {
+												var dr = document
+														.createElement('script');
+												dr.type = 'text/javascript';
+												dr.async = true;
+												dr.src = '//share.donreach.com/buttons.js';
+												(document
+														.getElementsByTagName('head')[0] || document
+														.getElementsByTagName('body')[0])
+														.appendChild(dr);
+											})();
+										</script>
+										<p itemprop="description">Ignite Talks is a fast-paced
+											geek event, which brings to front the august minds around us.
+											IgniteMSIT would be the first, to ever host an Ignite Talk in
+											Delhi-NCR. We target a selected audience of 350 budding
+											revolutionists to be a part of this inspiring event. The
+											speakers are from varied domains, sharing their views, ideas
+											and experiences to the fullest, in the minimum amount of
+											time.</p>
+										<div class="about-btn-area">
+											<a href="team" class="button button-default"
+												data-text="Check Our Team"><span>Check Our Team</span></a>
+										</div>
+										<meta itemprop="startDate" content="2016-03-30T10:00">
+										<meta itemprop="endDate" content="2016-03-30T16:00">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End about section -->
+
+	<!-- Start Register Section -->
+	<section id="call-to-action">
+		<img src="assets/images/call-to-action-bg.png" alt="img">
+		<div class="call-to-overlay">
+			<div class="container">
+				<div class="call-to-content wow fadeInUp">
+					<h2>Register Now</h2>
+					<a class="button button-default" data-text="Register Now"
+						data-toggle="modal" data-target="#registerModal"><span>Register
+							Now</span></a>
+				</div>
+				<div id="registerModal" class="modal fade">
+					<div class="modal-dialog" style="color: #000000; width: 90%">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close btn btn-danger"
+									data-dismiss="modal">&times;</button>
+								<h4 class="modal-title">Register</h4>
+							</div>
+							<div class="modal-body">
+								<p>
+									If the form is not Loading.<br>Please Login into your
+									Google Account or <a href="http://goo.gl/forms/0K3pHX7nPc"
+										target="_blank">Click Here</a>
+								<p>
+									<iframe src="http://goo.gl/forms/0K3pHX7nPc"
+										style="width: 100%; height: 60vh; border: 0px;">Loading...</iframe>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default"
+									data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Register Section -->
+
+	<!-- Start Contact section -->
+	<section id="contact">
+		<div class="container">
+			<div class="row" itemprop="location" itemscope
+				itemtype="http://schema.org/Place">
+				<div class="col-md-4 col-sm-6 col-xs-12">
+					<div class="contact-left wow fadeInLeft" style="height: 90vh;">
+						<h2>Contact with us</h2>
+						<address class="single-address">
+							<h4>Location:</h4>
+							<p itemprop="url" href="http://msit.in">
+								<span itemprop="name">Maharaja Surajmal Institute of
+									Technology 
+							</p>
+							<input type="hidden" itemprop="address" itemscope
+								itemtype="http://schema.org/PostalAddress" value="New Delhi">
+						</address>
+						<address class="single-address">
+							<h4>Phone</h4>
+							<p>+919582323805</p>
+						</address>
+						<address class="single-address">
+							<h4>E-Mail</h4>
+							<p>info@ignitemsit.com</p>
+						</address>
+					</div>
+				</div>
+				<div class="col-md-8 col-sm-6 col-xs-12">
+					<div class="contact-right wow fadeInRight" style="height: 90vh;">
+						<h2>Find Us</h2>
+						<iframe
+							src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Maharaja Surajmal Institute of Technology&amp;output=embed"
+							width="100%" style="height: 60vh;" frameborder="0"
+							style="border:0" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Contact section -->
+
+	<!-- Start Footer -->
+	<footer id="footer">
+		<div class="footer-bottom">
 			<div>
 				<br> <a href="https://www.facebook.com/ignitemsit/"><i
 					class="fa fa-facebook"></i></a> <a
 					href="http://www.twitter.com/ignitemsit"><i
-					class="fa fa-twitter"></i></a>
+					class="fa fa-twitter"></i></a> <a
+					href="https://plus.google.com/104194730067761944888"><span
+					class="fa fa-google-plus"></span></a>
 			</div>
 			<p>
 				Copyright 2016<br> <a href="http://ignitemsit.com"
@@ -519,19 +484,29 @@
 					itemprop="name">Ignite MSIT &reg;</span></a>
 			</p>
 		</div>
-	</div>
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+	</footer>
+	<!-- End Footer -->
+
+	<!-- initialize jQuery Library -->
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script type="text/javascript" src="js/bootstrap.js"></script>
-	<script type="text/javascript" src="js/SmoothScroll.js"></script>
-	<script type="text/javascript" src="js/wow.min.js"></script>
-	<script type="text/javascript" src="js/jquery.isotope.js"></script>
-	<script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
-	<script type="text/javascript" src="js/contact_me.js"></script>
-	<script type="text/javascript" src="js/owl.carousel.js"></script>
-	<!-- Javascripts
-    ================================================== -->
-	<script type="text/javascript" src="js/main.js"></script>
+	<!-- Bootstrap -->
+	<script src="assets/js/bootstrap.js"></script>
+	<!-- Slick Slider -->
+	<script type="text/javascript" src="assets/js/slick.js"></script>
+	<!-- Counter -->
+	<script type="text/javascript" src="assets/js/waypoints.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.counterup.js"></script>
+	<!-- mixit slider -->
+	<script type="text/javascript" src="assets/js/jquery.mixitup.js"></script>
+	<!-- Add fancyBox -->
+	<script type="text/javascript" src="assets/js/jquery.fancybox.pack.js"></script>
+	<!-- Wow animation -->
+	<script type="text/javascript" src="assets/js/wow.js"></script>
+
+	<!-- Custom js -->
+	<script type="text/javascript" src="assets/js/custom.js"></script>
+
 </body>
 </html>

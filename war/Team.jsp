@@ -7,35 +7,45 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="keywords"
 	content="Ignite MSIT Maharaja Surajmal Institute of Technology New Delhi NCR first talk event IgniteMSIT 30 March 2016 Diwakar Vaish speaker Abhas mitra vishwas mudagal ignitemsit.com best event of msit">
-<meta name="description" content="IgniteMSIT Team">
+<meta name="description"
+	content="IgniteMSIT would be the first, to ever host an Ignite Talk in Delhi-NCR. We target a selected audience of 500 budding revolutionists to be a part of this inspiring event. The speakers are from varied domains, sharing their views, ideas and experiences to the fullest, in the minimum amount of time. The event will be held at Auditorium,MSIT,Delhi,India on 30.03.2016">
 <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
-<title>Meet The Team</title>
-<meta name="description" content="">
-<meta name="author" content="">
-
-
+<meta name="google-site-verification"
+	content="2VAoCnYQe5VWD-VUTqlYPrJC-qBEpQq_fzLDF3rUtmo" />
+<meta name="msvalidate.01" content="FB4B640430CE5941B73AC59B120A21CE" />
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>Meet Our Team</title>
+<!-- Favicon -->
+<link rel="shortcut icon" type="image/icon"
+	href="assets/images/favicon.ico" />
+<!-- Font Awesome -->
+<link href="assets/css/font-awesome.css" rel="stylesheet">
 <!-- Bootstrap -->
-<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-<link rel="stylesheet" type="text/css"
-	href="fonts/font-awesome/css/font-awesome.css">
+<link href="assets/css/bootstrap.css" rel="stylesheet">
+<!-- Slick slider -->
+<link rel="stylesheet" type="text/css" href="assets/css/slick.css" />
+<!-- Fancybox slider -->
+<link rel="stylesheet" href="assets/css/jquery.fancybox.css"
+	type="text/css" media="screen" />
+<!-- Animate css -->
+<link rel="stylesheet" type="text/css" href="assets/css/animate.css" />
+<!-- Theme color -->
+<link id="switcher" href="assets/css/theme-color/red-theme.css"
+	rel="stylesheet">
 
-<!-- Slider
-    ================================================== -->
-<link href="css/owl.carousel.css" rel="stylesheet" media="screen">
-<link href="css/owl.theme.css" rel="stylesheet" media="screen">
+<!-- Main Style -->
+<link href="style.css" rel="stylesheet">
 
-<!-- Stylesheet
-    ================================================== -->
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<link rel="stylesheet" type="text/css" href="css/animate.min.css">
-<link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,300'
+<!-- Fonts -->
+<!-- Open Sans for body font -->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans'
 	rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="css/animate.min.css">
-<link
-	href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300'
+<!-- Raleway for Title -->
+<link href='https://fonts.googleapis.com/css?family=Raleway'
 	rel='stylesheet' type='text/css'>
-<script type="text/javascript" src="js/modernizr.custom.js"></script>
-
+<!-- Pacifico for 404 page   -->
+<link href='https://fonts.googleapis.com/css?family=Pacifico'
+	rel='stylesheet' type='text/css'>
 <script>
 	(function(i, s, o, g, r, a, m) {
 		i['GoogleAnalyticsObject'] = r;
@@ -53,272 +63,295 @@
 	ga('send', 'pageview');
 </script>
 
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 <body>
+	<!-- BEGAIN PRELOADER 
 	<div id="preloader">
-		<div id="status">
-			<img width="" height="" src="img/preloader.gif" height="64"
-				width="64" alt="">
-		</div>
+		<div class="loader">&nbsp;</div>
 	</div>
-	<nav id="menu" class="navbar navbar-default navbar-fixed-top">
-		<div class="container" style="height: 6em">
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed"
-					data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					<span class="sr-only">Toggle navigation</span> <span
-						class="icon-bar"></span> <span class="icon-bar"></span> <span
-						class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="/home"> <img width="" height=""
-					src="img/logo.png" alt="Logo" style="width: 5em; height: 3em"></a>
-			</div>
+	 END PRELOADER -->
 
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse"
-				id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="/home#home" class="page-scroll">Home</a></li>
-					<li><a href="/home#speaker-section" class="page-scroll">Speakers</a></li>
-					<li><a href="/home#team-section" class="page-scroll">Format</a></li>
-					<li><a href="/home#about-section" class="page-scroll">About</a></li>
-					<li><a href="/home#testimonials-section" class="page-scroll">Register</a></li>
-					<li><a href="/team">Team</a></li>
-					<li><a href="/home#contact-section" class="page-scroll">Contact</a></li>
-				</ul>
-			</div>
-			<!-- /.navbar-collapse -->
-		</div>
-		<!-- /.container-fluid -->
-	</nav>
+	<!-- SCROLL TOP BUTTON -->
+	<a class="scrollToTop" href="#"><i class="fa fa-chevron-up"></i></a>
+	<!-- END SCROLL TOP BUTTON -->
 
-	<!-- Header -->
-	<header> </header>
-	<div id="team-section" class="text-center">
+	<!-- Start menu section -->
+	<section id="menu-area">
+		<nav class="navbar navbar-default main-navbar" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+					<button type="button" class="navbar-toggle collapsed"
+						data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+						aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span> <span
+							class="icon-bar"></span> <span class="icon-bar"></span> <span
+							class="icon-bar"></span>
+					</button>
+					<!-- LOGO -->
+					<a class="navbar-brand logo" href="/home"><img
+						src="assets/images/logo_real.png" alt="logo"></a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul id="top-menu" class="nav navbar-nav main-nav menu-scroll">
+						<li><a href="/home">Home</a></li>
+						<li><a href="/home#from-blog">Speakers</a></li>
+						<li><a href="/home#service">Format</a></li>
+						<li><a href="/home#about">About</a></li>
+						<li><a href="/home#call-to-action">Register</a></li>
+						<li class="active"><a href="/team">Team </a></li>
+						<li><a href="/home#contact">Contact</a></li>
+					</ul>
+				</div>
+				<!--/.nav-collapse -->
+			</div>
+		</nav>
+	</section>
+	<!-- End menu section -->
+
+	<!-- Start Team action -->
+	<section id="team">
 		<div class="container">
-			<div class="section-title wow fadeInDown">
-				<h2>
-					Meet the <strong>Team</strong>
-				</h2>
-				<hr>
-				<div class="clearfix"></div>
-			</div>
-			<div id="row">
-				<div class="col-md-3 col-sm-6 team wow fadeInUp"
-					data-wow-delay="200ms">
-					<div class="thumbnail">
-						<img width="" height="" src="img/team/pulkit.jpg" alt="..."
-							class="img-circle team-img">
-						<div class="caption">
-							<h3>Pulkit</h3>
-							<p>Organizer</p>
-							<ul class="list-inline">
-								<li><a href="https://www.facebook.com/ignitemsit/"><i
-										class="fa fa-facebook"></i></a></li>
-							</ul>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="team-area">
+						<div class="title-area">
+							<h2 class="tittle">Meet our team</h2>
+							<span class="tittle-line"></span>
 						</div>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 team wow fadeInUp"
-					data-wow-delay="200ms">
-					<div class="thumbnail">
-						<img width="" height="" src="img/team/harshit.jpg" alt="..."
-							class="img-circle team-img">
-						<div class="caption">
-							<h3>Harshit</h3>
-							<p>Production</p>
-							<ul class="list-inline">
-								<li><a href="https://www.facebook.com/ignitemsit/"><i
-										class="fa fa-facebook"></i></a></li>
-							</ul>
+						<!-- Start team content -->
+						<div class="team-content">
+							<div>
+								<ul class="team-grid">
+									<li>
+										<div class="team-item team-img-1 wow fadeInUp">
+											<div class="team-info">
+												<p></p>
+												<a href="#"><span class="fa fa-facebook"></span></a> <a
+													href="#"><span class="fa fa-twitter"></span></a> <a
+													href="#"><span class="fa fa-linkedin"></span></a>
+											</div>
+										</div>
+										<div class="team-address">
+											<p>Pulkit</p>
+											<span>Organizer</span>
+										</div>
+									</li>
+									<li>
+										<div class="team-item team-img-7 wow fadeInUp">
+											<div class="team-info">
+												<p></p>
+												<a href="#"><span class="fa fa-facebook"></span></a> <a
+													href="#"><span class="fa fa-twitter"></span></a> <a
+													href="#"><span class="fa fa-linkedin"></span></a>
+											</div>
+										</div>
+										<div class="team-address">
+											<p>Aman</p>
+											<span>Production</span>
+										</div>
+									</li>
+									<li>
+										<div class="team-item team-img-2 wow fadeInUp">
+											<div class="team-info">
+												<p></p>
+												<a href="#"><span class="fa fa-facebook"></span></a> <a
+													href="#"><span class="fa fa-twitter"></span></a> <a
+													href="#"><span class="fa fa-linkedin"></span></a>
+											</div>
+										</div>
+										<div class="team-address">
+											<p>Harshit</p>
+											<span>Production</span>
+										</div>
+									</li>
+									<li>
+										<div class="team-item team-img-4 wow fadeInUp">
+											<div class="team-info">
+												<p></p>
+												<a href="#"><span class="fa fa-facebook"></span></a> <a
+													href="#"><span class="fa fa-twitter"></span></a> <a
+													href="#"><span class="fa fa-linkedin"></span></a>
+											</div>
+										</div>
+										<div class="team-address">
+											<p>Manish</p>
+											<span>Production</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<br /> <br />
+							<div>
+								<ul class="team-grid">
+									<li>
+										<div class="team-item team-img-3 wow fadeInUp">
+											<div class="team-info">
+												<p></p>
+												<a href="#"><span class="fa fa-facebook"></span></a> <a
+													href="#"><span class="fa fa-twitter"></span></a> <a
+													href="#"><span class="fa fa-linkedin"></span></a>
+											</div>
+										</div>
+										<div class="team-address">
+											<p>Mehar</p>
+											<span>Production</span>
+										</div>
+									</li>
+									<li>
+										<div class="team-item team-img-5 wow fadeInUp">
+											<div class="team-info">
+												<p></p>
+												<a href="#"><span class="fa fa-facebook"></span></a> <a
+													href="#"><span class="fa fa-twitter"></span></a> <a
+													href="#"><span class="fa fa-linkedin"></span></a>
+											</div>
+										</div>
+										<div class="team-address">
+											<p>Vidhi</p>
+											<span>Production</span>
+										</div>
+									</li>
+									<li>
+										<div class="team-item team-img-6 wow fadeInUp">
+											<div class="team-info">
+												<p></p>
+												<a href="#"><span class="fa fa-facebook"></span></a> <a
+													href="#"><span class="fa fa-twitter"></span></a> <a
+													href="#"><span class="fa fa-linkedin"></span></a>
+											</div>
+										</div>
+										<div class="team-address">
+											<p>Akshat</p>
+											<span>Curation</span>
+										</div>
+									</li>
+									<li>
+										<div class="team-item team-img-8 wow fadeInUp">
+											<div class="team-info">
+												<p></p>
+												<a href="#"><span class="fa fa-facebook"></span></a> <a
+													href="#"><span class="fa fa-twitter"></span></a> <a
+													href="#"><span class="fa fa-linkedin"></span></a>
+											</div>
+										</div>
+										<div class="team-address">
+											<p>Anchit</p>
+											<span>Designer</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<br /> <br />
+							<div>
+								<ul class="team-grid">
+									<li>
+										<div class="team-item team-img-9 wow fadeInUp">
+											<div class="team-info">
+												<p></p>
+												<a href="https://www.facebook.com/DaNish.AnSari.1994"><span
+													class="fa fa-facebook"></span></a> <a
+													href="https://twitter.com/DaNish_AnSari94"><span
+													class="fa fa-twitter"></span></a> <a
+													href="https://www.linkedin.com/in/danish-kamal-47632622"><span
+													class="fa fa-linkedin"></span></a>
+											</div>
+										</div>
+										<div class="team-address">
+											<p>Danish</p>
+											<span>Web Development</span>
+										</div>
+									</li>
+									<li>
+										<div class="team-item team-img-10 wow fadeInUp">
+											<div class="team-info">
+												<p></p>
+												<a href="#"><span class="fa fa-facebook"></span></a> <a
+													href="#"><span class="fa fa-twitter"></span></a> <a
+													href="#"><span class="fa fa-linkedin"></span></a>
+											</div>
+										</div>
+										<div class="team-address">
+											<p>Devika</p>
+											<span>Curation</span>
+										</div>
+									</li>
+									<li>
+										<div class="team-item team-img-11 wow fadeInUp">
+											<div class="team-info">
+												<p></p>
+												<a href="#"><span class="fa fa-facebook"></span></a> <a
+													href="#"><span class="fa fa-twitter"></span></a> <a
+													href="#"><span class="fa fa-linkedin"></span></a>
+											</div>
+										</div>
+										<div class="team-address">
+											<p>Parul</p>
+											<span>Publicity</span>
+										</div>
+									</li>
+									<li>
+										<div class="team-item team-img-12 wow fadeInUp">
+											<div class="team-info">
+												<p></p>
+												<a href="#"><span class="fa fa-facebook"></span></a> <a
+													href="#"><span class="fa fa-twitter"></span></a> <a
+													href="#"><span class="fa fa-linkedin"></span></a>
+											</div>
+										</div>
+										<div class="team-address">
+											<p>Pranav</p>
+											<span>Publicity</span>
+										</div>
+									</li>
+								</ul>
+							</div>
 						</div>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 team wow fadeInUp"
-					data-wow-delay="200ms">
-					<div class="thumbnail">
-						<img width="" height="" src="img/team/manish.jpg" alt="..."
-							class="img-circle team-img">
-						<div class="caption">
-							<h3>Manish</h3>
-							<p>Production</p>
-							<ul class="list-inline">
-								<li><a href="https://www.facebook.com/ignitemsit/"><i
-										class="fa fa-facebook"></i></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 team wow fadeInUp"
-					data-wow-delay="200ms">
-					<div class="thumbnail">
-						<img width="" height="" src="img/team/meher.jpg" alt="..."
-							class="img-circle team-img">
-						<div class="caption">
-							<h3>T Meher</h3>
-							<p>Production</p>
-							<ul class="list-inline">
-								<li><a href="https://www.facebook.com/ignitemsit/"><i
-										class="fa fa-facebook"></i></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 team wow fadeInUp"
-					data-wow-delay="200ms">
-					<div class="thumbnail">
-						<img width="" height="" src="img/team/vidhi.jpg" alt="..."
-							class="img-circle team-img">
-						<div class="caption">
-							<h3>Vidhi</h3>
-							<p>Production</p>
-							<ul class="list-inline">
-								<li><a href="https://www.facebook.com/ignitemsit/"><i
-										class="fa fa-facebook"></i></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 team wow fadeInUp"
-					data-wow-delay="200ms">
-					<div class="thumbnail">
-						<img width="" height="" src="img/team/akshat.jpg" alt="..."
-							class="img-circle team-img">
-						<div class="caption">
-							<h3>Akshat</h3>
-							<p>Curation</p>
-							<ul class="list-inline">
-								<li><a href="https://www.facebook.com/ignitemsit/"><i
-										class="fa fa-facebook"></i></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 team wow fadeInUp"
-					data-wow-delay="200ms">
-					<div class="thumbnail">
-						<img width="" height="" src="img/team/aman.jpg" alt="..."
-							class="img-circle team-img">
-						<div class="caption">
-							<h3>Amandeep</h3>
-							<p>Logistics</p>
-							<ul class="list-inline">
-								<li><a href="https://www.facebook.com/ignitemsit/"><i
-										class="fa fa-facebook"></i></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 team wow fadeInUp"
-					data-wow-delay="200ms">
-					<div class="thumbnail">
-						<img width="" height="" src="img/team/anchit.jpg" alt="..."
-							class="img-circle team-img">
-						<div class="caption">
-							<h3>Anchit</h3>
-							<p>Designer</p>
-							<ul class="list-inline">
-								<li><a href="https://www.facebook.com/ignitemsit/"><i
-										class="fa fa-facebook"></i></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 team wow fadeInUp"
-					data-wow-delay="200ms">
-					<div class="thumbnail">
-						<img width="" height="" src="img/team/danish.jpg" alt="..."
-							class="img-circle team-img">
-						<div class="caption">
-							<h3>Danish</h3>
-							<p>Web Development</p>
-							<ul class="list-inline">
-								<li><a href="https://www.facebook.com/ignitemsit/"><i
-										class="fa fa-facebook"></i></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 team wow fadeInUp"
-					data-wow-delay="200ms">
-					<div class="thumbnail">
-						<img width="" height="" src="img/team/devika.jpg" alt="..."
-							class="img-circle team-img">
-						<div class="caption">
-							<h3>Devika</h3>
-							<p>Curation</p>
-							<ul class="list-inline">
-								<li><a href="https://www.facebook.com/ignitemsit/"><i
-										class="fa fa-facebook"></i></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 team wow fadeInUp"
-					data-wow-delay="200ms">
-					<div class="thumbnail">
-						<img width="" height="" src="img/team/parul.jpg" alt="..."
-							class="img-circle team-img">
-						<div class="caption">
-							<h3>Parul</h3>
-							<p>Publicity</p>
-							<ul class="list-inline">
-								<li><a href="https://www.facebook.com/ignitemsit/"><i
-										class="fa fa-facebook"></i></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 team wow fadeInUp"
-					data-wow-delay="200ms">
-					<div class="thumbnail">
-						<img width="" height="" src="img/team/pranavjr.jpg" alt="..."
-							class="img-circle team-img">
-						<div class="caption">
-							<h3>Pranav</h3>
-							<p>Publicity</p>
-							<ul class="list-inline">
-								<li><a href="https://www.facebook.com/ignitemsit/"><i
-										class="fa fa-facebook"></i></a></li>
-							</ul>
-						</div>
+						<!-- End team content -->
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<div id="footer">
-		<div class="container">
-			<div>
-				<br> <a href="https://www.facebook.com/ignitemsit/"><i
-					class="fa fa-facebook"></i></a> <a
-					href="http://www.twitter.com/ignitemsit"><i
-					class="fa fa-twitter"></i></a>
-			</div>
+	</section>
+	<!-- Start Team action -->
 
+	<!-- Start Footer -->
+	<footer id="footer">
+		<div class="footer-bottom">
 			<p>
-				Copyright 2016<br> <a href="http://ignitemsit.com">Ignite
-					MSIT &reg;</a>
+				Copyright 2016<br> <a href="http://ignitemsit.com"><span>Ignite
+						MSIT &reg;</span></a>
+			</p>
 		</div>
-	</div>
+	</footer>
+	<!-- End Footer -->
 
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<!-- initialize jQuery Library -->
 	<script
-		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script type="text/javascript" src="js/bootstrap.js"></script>
-	<script type="text/javascript" src="js/SmoothScroll.js"></script>
-	<script type="text/javascript" src="js/wow.min.js"></script>
-	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
-	<script type="text/javascript" src="js/jquery.isotope.js"></script>
-	<script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
-	<script type="text/javascript" src="js/contact_me.js"></script>
-	<script type="text/javascript" src="js/owl.carousel.js"></script>
+	<!-- Bootstrap -->
+	<script src="assets/js/bootstrap.js"></script>
+	<!-- Slick Slider -->
+	<script type="text/javascript" src="assets/js/slick.js"></script>
+	<!-- Counter -->
+	<script type="text/javascript" src="assets/js/waypoints.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.counterup.js"></script>
+	<!-- mixit slider -->
+	<script type="text/javascript" src="assets/js/jquery.mixitup.js"></script>
+	<!-- Add fancyBox -->
+	<script type="text/javascript" src="assets/js/jquery.fancybox.pack.js"></script>
+	<!-- Wow animation -->
+	<script type="text/javascript" src="assets/js/wow.js"></script>
 
-	<!-- Javascripts
-    ================================================== -->
-	<script type="text/javascript" src="js/main.js"></script>
+	<!-- Custom js -->
+	<script type="text/javascript" src="assets/js/custom.js"></script>
+
 </body>
 </html>
