@@ -3008,3 +3008,16 @@ img{
 
 	
 }
+
+#testimonial{
+	background-color: #fff;
+	padding: 70px 0;
+	float: left;
+	display: inline;
+	width: 100%;	
+}
+
+.justify{
+	text-align: justify;
+    text-justify: inter-word;
+}

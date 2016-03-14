@@ -13,7 +13,7 @@
 <meta name="keywords"
 	content="Ignite MSIT Maharaja Surajmal Institute of Technology New Delhi NCR first talk event IgniteMSIT 30 March 2016 Diwakar Vaish speaker Abhas mitra vishwas mudagal ignitemsit.com best event of msit">
 <meta name="description"
-	content="IgniteMSIT would be the first, to ever host an Ignite Talk in Delhi-NCR. We target a selected audience of 500 budding revolutionists to be a part of this inspiring event. The speakers are from varied domains, sharing their views, ideas and experiences to the fullest, in the minimum amount of time. The event will be held at Auditorium,MSIT,Delhi,India on 30.03.2016">
+	content="IgniteMSIT would be the first, to ever host an Ignite Talk in Delhi-NCR.">
 <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
 <meta name="google-site-verification"
 	content="2VAoCnYQe5VWD-VUTqlYPrJC-qBEpQq_fzLDF3rUtmo" />
@@ -76,11 +76,23 @@
     <![endif]-->
 </head>
 <body itemscope itemtype="http://schema.org/Event">
-	<!-- BEGAIN PRELOADER 
+	<div id="fb-root"></div>
+	<script>
+		(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id))
+				return;
+			js = d.createElement(s);
+			js.id = id;
+			js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=1453946961575719";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+	<!-- BEGAIN PRELOADER -->
 	<div id="preloader">
 		<div class="loader">&nbsp;</div>
 	</div>
-	 END PRELOADER -->
+	<!-- END PRELOADER -->
 
 	<!-- SCROLL TOP BUTTON -->
 	<a class="scrollToTop" href="home"><i class="fa fa-chevron-up"></i></a>
@@ -129,13 +141,13 @@
 				</div>
 				<div id="navbar" class="navbar-collapse collapse">
 					<ul id="top-menu" class="nav navbar-nav main-nav menu-scroll">
-						<li class="active"><a href="#menu-area">Home</a></li>
-						<li><a href="#from-blog">Speakers</a></li>
-						<li><a href="#service">Format</a></li>
-						<li><a href="#about">About</a></li>
-						<li><a href="#call-to-action">Register</a></li>
+						<li id="menuHome" class="active"><a href="#menu-area">Home</a></li>
+						<li id="menuSpeaker"><a href="#from-blog">Speakers</a></li>
+						<li id="menuFormat"><a href="#service">Format</a></li>
+						<li id="menuAbout"><a href="#about">About</a></li>
+						<li id="menuRegister"><a href="#call-to-action">Register</a></li>
 						<li><a href="team">Team </a></li>
-						<li><a href="#contact">Contact</a></li>
+						<li id="menuContact"><a href="#contact">Contact</a></li>
 					</ul>
 				</div>
 				<!--/.nav-collapse -->
@@ -143,6 +155,73 @@
 		</nav>
 	</section>
 	<!-- End menu section -->
+
+	<!-- Welcome Modal -->
+	<div id="welcomeModal" class="modal fade">
+		<div class="modal-dialog" style="color: #000000; width: 65%">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close btn btn-danger"
+						data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Testimonial</h4>
+				</div>
+				<div class="modal-body">
+					<img src="/assets/images/newshd.jpg" alt="News" style="width: 100%">
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Welcome Modal -->
+
+	<!-- Testimonial Section Start -->
+	<section id="testimonial">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<!-- Start welcome area -->
+					<div class="welcome-area">
+						<div class="title-area">
+							<h2 class="tittle">Testimonial</h2>
+							<span class="tittle-line"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="about-area">
+						<div class="row">
+							<div class="col-md-5 col-sm-6 col-xs-12" id="news">
+								<div class="about-left wow fadeInLeft">
+									<img src="assets/images/news.jpg" alt="img"
+										style="width: 100%; height: 100%;">
+								</div>
+							</div>
+							<div class="col-md-7 col-sm-6 col-xs-12">
+								<div class="about-right wow fadeInRight">
+									<div class="title-area">
+										<h2 class="tittle">
+											The <span>Pinnacle</span> of IgniteMSIT
+										</h2>
+										<span class="tittle-line"></span>
+										<p class="justify">The Home Minister Of India, Mr. Rajnath
+											Singh, has gracefully recognized IgniteMSIT as an event that
+											will act as a catalyst in bringing revolutionary ideas to
+											front. His words of appreciation has reinforced the
+											enthusiasm of the Ignite Team and the Institution on a whole.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Testimonial Section Start -->
 
 	<!-- Start intro section -->
 	<section id="counter">
@@ -218,8 +297,40 @@
 									List <Speaker> ls = ofy().load().type(Speaker.class).list();
 									Iterator <Speaker> it = ls.iterator();
 									int i = 0;
+									try{
+										Speaker g = ofy().load().type(Speaker.class).id("Gaur Gopal Das").now();
+										if(g != null){
+									%>
+								<div class="col-md-4 col-xs-12 col-sm-4 wow slideInUp"
+									data-wow-delay="<%= 200*((i%3)+1) %>ms">
+									<article class="single-from-blog">
+										<figure>
+											<img src="<%= g.getPic() %>" alt="img">
+										</figure>
+										<div class="blog-title">
+											<h2>
+												<%= g.getName() %>
+											</h2>
+											<p class="justify">
+												<%= g.getShortDesc() %>
+											</p>
+										</div>
+										<p class="justify"><%= g.getDesc() %></p>
+										<div class="blog-footer">
+											<a href="https://www.google.co.in/search?q=<%=g.getName()%>"
+												target="_blank"><span class="fa fa-google"></span></a>
+										</div>
+									</article>
+								</div>
+								<%
+											i++;
+										}
+									}catch(Exception e){
+										e.printStackTrace();
+									}
 									while(it.hasNext()){
 										Speaker s = it.next();
+										if(!(s.getName().equals("Gaur Gopal Das"))){
 								%>
 								<div class="col-md-4 col-xs-12 col-sm-4 wow slideInUp"
 									data-wow-delay="<%= 200*((i%3)+1) %>ms">
@@ -231,11 +342,11 @@
 											<h2>
 												<%= s.getName() %>
 											</h2>
-											<p>
+											<p class="justify">
 												<%= s.getShortDesc() %>
 											</p>
 										</div>
-										<p><%= s.getDesc() %></p>
+										<p class="justify"><%= s.getDesc() %></p>
 										<div class="blog-footer">
 											<!-- 
 											<a href="<%= s.getFacebook() %>"><span
@@ -252,7 +363,15 @@
 									</article>
 								</div>
 								<%
-										i++;
+											if(i%3==2)
+											{
+												%>
+							</div>
+							<div class="row">
+								<%
+											}
+											i++;
+										}
 									}
 								%>
 							</div>
@@ -406,13 +525,13 @@
 								<h4 class="modal-title">Register</h4>
 							</div>
 							<div class="modal-body">
-								<p>
+								<p class="justify">
 									If the form is not Loading.<br>Please Login into your
 									Google Account or <a href="http://goo.gl/forms/0K3pHX7nPc"
 										target="_blank">Click Here</a>
 								<p>
 									<iframe src="http://goo.gl/forms/0K3pHX7nPc"
-										style="width: 100%; height: 60vh; border: 0px;">Loading...</iframe>
+										style="width: 100%; height: 60vh; border: 0px;" target="_top">Loading...</iframe>
 							</div>
 							<div class="modal-footer">
 								<button type="button" class="btn btn-default"
@@ -471,6 +590,10 @@
 	<footer id="footer">
 		<div class="footer-bottom">
 			<div>
+				<div class="fb-like"
+					data-href="https://www.facebook.com/ignitemsit/"
+					data-layout="button_count" data-action="like"
+					data-show-faces="true" data-share="false"></div>
 				<br> <a href="https://www.facebook.com/ignitemsit/"><i
 					class="fa fa-facebook"></i></a> <a
 					href="http://www.twitter.com/ignitemsit"><i
@@ -478,7 +601,7 @@
 					href="https://plus.google.com/104194730067761944888"><span
 					class="fa fa-google-plus"></span></a>
 			</div>
-			<p>
+			<p style="text-align: center">
 				Copyright 2016<br> <a href="http://ignitemsit.com"
 					itemprop="url" href="http://ignitemsit.com"><span
 					itemprop="name">Ignite MSIT &reg;</span></a>
@@ -504,9 +627,16 @@
 	<script type="text/javascript" src="assets/js/jquery.fancybox.pack.js"></script>
 	<!-- Wow animation -->
 	<script type="text/javascript" src="assets/js/wow.js"></script>
-
 	<!-- Custom js -->
 	<script type="text/javascript" src="assets/js/custom.js"></script>
+	<!-- Scroll Fire Js -->
+	<script type="text/javascript" src="assets/js/jquery.scrollfire.js"></script>
+	<script>
+		$("#news").click(function() {
+			$('#welcomeModal').modal('show');
+		});
+	</script>
+
 
 </body>
 </html>

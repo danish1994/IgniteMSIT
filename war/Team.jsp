@@ -8,7 +8,7 @@
 <meta name="keywords"
 	content="Ignite MSIT Maharaja Surajmal Institute of Technology New Delhi NCR first talk event IgniteMSIT 30 March 2016 Diwakar Vaish speaker Abhas mitra vishwas mudagal ignitemsit.com best event of msit">
 <meta name="description"
-	content="IgniteMSIT would be the first, to ever host an Ignite Talk in Delhi-NCR. We target a selected audience of 500 budding revolutionists to be a part of this inspiring event. The speakers are from varied domains, sharing their views, ideas and experiences to the fullest, in the minimum amount of time. The event will be held at Auditorium,MSIT,Delhi,India on 30.03.2016">
+	content="IgniteMSIT would be the first, to ever host an Ignite Talk in Delhi-NCR">
 <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
 <meta name="google-site-verification"
 	content="2VAoCnYQe5VWD-VUTqlYPrJC-qBEpQq_fzLDF3rUtmo" />
@@ -71,7 +71,7 @@
     <![endif]-->
 </head>
 <body>
-	<!-- BEGAIN PRELOADER 
+	<!-- BEGAIN PRELOADER
 	<div id="preloader">
 		<div class="loader">&nbsp;</div>
 	</div>
@@ -349,9 +349,10 @@
 	<script type="text/javascript" src="assets/js/jquery.fancybox.pack.js"></script>
 	<!-- Wow animation -->
 	<script type="text/javascript" src="assets/js/wow.js"></script>
-
 	<!-- Custom js -->
 	<script type="text/javascript" src="assets/js/custom.js"></script>
+	<!-- Scroll Fire Js -->
+	<script type="text/javascript" src="assets/js/jquery.scrollfire.js"></script>
 
 </body>
 </html>
